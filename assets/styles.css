@@ -43,11 +43,10 @@ body {
 }
 
 #tabContainer {
-
     height: 38px;
     margin-top: 96px;
     position: absolute;
-    left: 79px;
+    left: 59px;
     transform: none;
     display: block;
     width: 140 + "px";

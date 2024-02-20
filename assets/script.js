@@ -361,7 +361,7 @@ function compactMode() {
         document.getElementById("serverInfo").style.width = null
         document.getElementById("serverInfo").style.left = null
         document.getElementById("serverInfo").style.bottom = null
-        document.documentElement.style.setProperty("--tabWidth", "140px")
+        document.documentElement.style.setProperty("--tabWidth", "180px")
     }
 
     if (window.innerHeight < 640) {
