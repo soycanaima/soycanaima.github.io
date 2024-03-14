@@ -260,72 +260,76 @@
 "title": "OptiCraft",
 "subtitle": "Versiones",
 "e1": {
+"name": "OptiCraft 1.5",
+"l1": "https://www.mediafire.com/file/k11ii3cgsf3st8p"
+}, 
+"e2": {
 "name": "OptiCraft 1.7",
 "l1": "https://www.mediafire.com/file/wuot9zxm5u35saa/OptiCraft_1.7.3.1_By_OptiJuegos.7z/file",
 "l2": "https://www.mediafire.com/file/fr7o960s1c792an/OptiCraft+1.7.10.7z/file",
 "b1": "Bedrock",
 "b2": "Java"
 },
-"e2": {
+"e3": {
 "name": "OptiCraft 1.8",
 "l1": "https://www.mediafire.com/file/4x7fqpb6h7g6bi5/OptiCraft_JAVA_CLIENTS_1.8.9.7z/file",
 "b1": "Java"
 },
-"e3": {
+"e4": {
 "name": "OptiCraft 1.9",
 "l1": "https://www.mediafire.com/file/8iu191nzq2obe9q/OptiCraft+1.9.1.0+By+OptiJuegos.7z/file",
 "b1": "Bedrock"
 },
-"e4": {
+"e5": {
 "name": "OptiCraft 1.12",
 "l1": "https://www.mediafire.com/file/zijx9jtni7rf9pf/OptiCraft+1.12.0+By+OptiJuegos.7z/file",
 "l2": "https://www.mediafire.com/file/gc4eon4umkcoqzo/OptiCraft_JAVA_1.12.2_FORGE.7z/file",
 "b1": "Bedrock",
 "b2": "Java"
 },
-"e5": {
+"e6": {
 "name": "OptiCraft 1.14",
 "l1": "https://www.mediafire.com/file/lhucputck9z8vst/OptiCraft_1.14.31_By_OptiJuegos.7z/file",
 "b1": "Bedrock"
 },
-"e6": {
+"e7": {
 "name": "OptiCraft 1.16",
 "l1": "https://www.mediafire.com/file/y9cq2460i7ta155/OptiCraft_1.16.12_By_OptiJuegos_OpenGL_4.1.7z/file",
 "l2": "https://www.mediafire.com/file/xlfoayglwoinlgy/OptiCraft+Java+1.16.5.7z/file",
 "b1": "Bedrock",
 "b2": "Java"
 },
-"e7": {
+"e8": {
 "name": "OptiCraft 1.17",
 "l1": "https://www.mediafire.com/file/4eb3vj1duts6jqb/OptiCraft+1.17.30+By+OptiJuegos.7z/file",
 "b1": "Bedrock"
 },
-"e8": {
+"e9": {
 "name": "OptiCraft 1.18",
 "l1": "https://www.mediafire.com/file/snrlqprwhucgwzm/OptiCraft_1.18.31_By_OptiJuegos.7z/file",
 "b1": "Bedrock"
 },
-"e9": {
+"e10": {
 "name": "OptiCraft 1.19",
 "l1": "https://www.mediafire.com/file/r2hiodz1ki74ohr/OptiCraft+1.19.60+64+BITS.7z/file",
 "b1": "Bedrock"
 },
-"e10": {
+"e11": {
 "name": "OptiCraft 1.20",
 "l1": "https://www.mediafire.com/file/if7vo48hlkun1rd/OptiCraft+1.20.10+By+OptiJuegos.7z/file",
 "l2": "https://drive.google.com/file/d/1Yg6TZy0q3eypCk4rl0VTOyyAtQx7rE7y/view",
 "b1": "Bedrock",
 "b2": "Java"
 },
-"e11": {
+"e12": {
 "name": "OptiCraft Server Creator",
 "l1": "https://www.mediafire.com/file/nyqz3rrf2o7vzwl"
 },
-"e12": {
+"e13": {
 "name": "OptiCraft Skywars Server Creator 1.9",
 "l1": "https://www.mediafire.com/file/kcd2pgeljrkteaw/OptiCraft_Skywars_Creator_1.9.7z/file"
 },
-"e13": {
+"e14": {
 "name": "Lore del Juego",
 "l1": "https://docs.google.com/document/d/1Y6lxI8F0LJETPAxr1wkHbSrlqphIHVQOF_cGZFwJLD8/" ,
 "b1": "Leer"
