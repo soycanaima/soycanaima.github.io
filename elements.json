@@ -38,11 +38,11 @@
 },
 "e8": {
 "name": "PPSSPP",
-"l1": "https://www.mediafire.com/file/emchc7qm469i33h/"
+"l1": "https://cdn.discordapp.com/attachments/1065487041611186196/1131014766635257867/PPSSPP_LITE_V1.1.7z"
 },
 "e9": {
 "name": "pSXFIN",
-"l1": "https://www.mediafire.com/file/6lp6uyf4ipp2kjl/pSXFIN_V1.1.7z/file"
+"l1": "https://cdn.discordapp.com/attachments/1065487041611186196/1114768795865722990/pSXFIN_V1.1.7z"
 },
 "e10": {
 "name": "Project64",
@@ -54,7 +54,7 @@
 "subtitle": "Juegos optimizados",
 "e1": {
 "name": "Bad Piggies",
-"l1": "https://www.mediafire.com/file/fv1mo841b26k7dl/Bad_Piggies.7z/file"
+"l1": "https://cdn.discordapp.com/attachments/1065489877497548861/1177785781545353267/Bad_Piggies.7z"
  },
 "e2": {
 "name": "Cat Mario 3D",
@@ -84,7 +84,7 @@
 },
 "e7": {
 "name": "Craftsman",
-"l1": "https://www.mediafire.com/file/a59ipp77m5wggmu"
+"l1": "https://cdn.discordapp.com/attachments/1065489877497548861/1186802759429783654/Craftsman_MOD_PC_PORT_By_OptiJuegos.7z"
 },
 "e8": {
 "name": "Cuphead",
@@ -92,7 +92,7 @@
 },
 "e9": {
 "name": "Doom",
-"l1": "https://www.mediafire.com/file/gfft03kkztb6nqp/Doom_1.7z/file"
+"l1": "https://cdn.discordapp.com/attachments/1065489877497548861/1182058162732400742/Doom_1.7z"
 }, 
 "e10": {
 "name": "ERROR 422 Portable",
@@ -111,10 +111,7 @@
 },  
 "e13": {
 "name": "Geometry Dash 2.2 Optimizado",
-"l1": "https://www.mediafire.com/file/wfqrbq1zlsekbh0/Geometry+Dash+2.2+Optimizado.7z/file",
-"l2": "https://www.mediafire.com/file/2djbri6spnkutef/Geometry+Dash+2.2+9MB.7z/file",
-"b1": "Optimizado",
-"b2": "9 MB MOD" 
+"l1": "https://www.mediafire.com/file/wfqrbq1zlsekbh0/Geometry+Dash+2.2+Optimizado.7z/file"
 }, 
 "e14": {
 "name": "GTA: San Andreas",
@@ -137,7 +134,7 @@
 },
 "e18": {
 "name": "Happy Wheels",
-"l1": "https://www.mediafire.com/file/lqymeiy6y1a8ikl/Happy_Wheels.exe/file"
+"l1": "https://cdn.discordapp.com/attachments/1065489877497548861/1197590313011785768/Happy_Wheels.exe"
 },
 "e19": {
 "name": "Hello Neighbor",
@@ -149,7 +146,7 @@
 },
 "e21": {
 "name": "Inspector Blindson",
-"l1": "https://www.mediafire.com/file/2g50letaag64wae/"
+"l1": "https://cdn.discordapp.com/attachments/1065489877497548861/1178046799563477025/Inspector_Blindson.exe"
 }, 
 "e22": {
 "name": "Left 4 Dead",
@@ -161,11 +158,11 @@
 },
 "e24": {
 "name": "Minecraft BETA 1.7.3 Portable",
-"l1": "https://www.mediafire.com/file/qhxkx9l0oi6uv13/Minecraft_Beta_1.7.3.7z/file"
+"l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1172665765942525973/Minecraft_Beta_1.7.3.7z"
 },
 "e25": {
 "name": "Minecraft 1.5.2 Portable",
-"l1": "https://www.mediafire.com/file/p9f38nl7zftkto4/Minecraft_1.5.2_Portable.7z/file"
+"l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1113251823571177535/Minecraft_1.5.2_Portable.7z"
 },
 "e26": {
 "name": "Minecraft: Legacy Edition",
@@ -181,7 +178,7 @@
 },
 "e29": {
 "name": "Plants vs Zombies",
-"l1": "https://www.mediafire.com/file/m5p2stbr4ig6anz/Plants_vs_Zombies.7z/file"
+"l1": "https://cdn.discordapp.com/attachments/1065489877497548861/1128792447783284928/Plants_vs_Zombies.7z"
 },
 "e30": {
 "name": "Poly Bridge",
@@ -213,22 +210,22 @@
 },
 "e37": {
 "name": "Subway Surfers",
-"l1": "https://www.mediafire.com/file/22iryej7fwvh5y0/Subway_Surfers.7z/file",
+"l1": "https://cdn.discordapp.com/attachments/1065489877497548861/1167666961245798420/Subway_Surfers.7z",
 "l2": "https://optijuegos.github.io/subway-surfers-web/",
 "b1": "Descargar",
 "b2": "Web"
 },
 "e38": {
 "name": "Super Mario 64",
-"l1": "https://www.mediafire.com/file/mh9rjphgronqk0b/Super_Mario_64.zip/file"
+"l1": "https://cdn.discordapp.com/attachments/1065489877497548861/1113672795302412338/Super_Mario_64.zip"
 },
 "e39": {
 "name": "Super Mario 64 Coop",
-"l1": "https://www.mediafire.com/file/2f5ujmmw4r1yqof/sm64ex-coop.7z/file"
+"l1": "https://cdn.discordapp.com/attachments/1065489877497548861/1180286353557160006/sm64ex-coop.7z"
 },
 "e40": {
 "name": "Super Mario Flash",
-"l1": "https://www.mediafire.com/file/szak633hm3jveyu/Super_Mario_Flash.exe/file"
+"l1": "https://cdn.discordapp.com/attachments/1065489877497548861/1190453894204108830/Super_Mario_Flash.exe"
 }, 
 "e41": {
 "name": "Terraria",
@@ -236,7 +233,7 @@
 },
 "e42": {
 "name": "Tetris GameBoy",
-"l1": "https://www.mediafire.com/file/13ecvfve8z32yb0/Tetris_GameBoy.exe/file"
+"l1": "https://cdn.discordapp.com/attachments/1065489877497548861/1196934575650259087/Tetris_GameBoy.exe"
 },
 "e43": {
 "name": "The Forest Lite",
@@ -244,98 +241,89 @@
 },   
 "e44": {
 "name": "The Impossible Game",
-"l1": "https://www.mediafire.com/file/c6hjwm0jkqbmm2o/Impossible_Game_Canaima_MOD.7z/file"
+"l1": "https://cdn.discordapp.com/attachments/1065489877497548861/1196549548122832997/Impossible_Game_Canaima_MOD.7z"
 },  
 "e45": {
 "name": "The Simpsons Hit & Run",
 "l1": "https://www.mediafire.com/file/vcqkjafdytglgz6/"
 }, 
-"e46": {
+"e45": {
 "name": "World's Hardest Game",
 "l1": "https://www.mediafire.com/file/76ff84p7904jygq"
-},
-"e47": {
-"name": "Youtuber's Life Simulator",
-"l1": "https://www.mediafire.com/file/2gae0so6pp3lmu0" 
 }
 },
 "t3": {
 "title": "OptiCraft",
 "subtitle": "Versiones",
 "e1": {
-"name": "OptiCraft 1.5",
-"l1": "https://www.mediafire.com/file/k11ii3cgsf3st8p"
-}, 
-"e2": {
 "name": "OptiCraft 1.7",
 "l1": "https://www.mediafire.com/file/wuot9zxm5u35saa/OptiCraft_1.7.3.1_By_OptiJuegos.7z/file",
 "l2": "https://www.mediafire.com/file/fr7o960s1c792an/OptiCraft+1.7.10.7z/file",
 "b1": "Bedrock",
 "b2": "Java"
 },
-"e3": {
+"e2": {
 "name": "OptiCraft 1.8",
 "l1": "https://www.mediafire.com/file/4x7fqpb6h7g6bi5/OptiCraft_JAVA_CLIENTS_1.8.9.7z/file",
 "b1": "Java"
 },
-"e4": {
+"e3": {
 "name": "OptiCraft 1.9",
 "l1": "https://www.mediafire.com/file/8iu191nzq2obe9q/OptiCraft+1.9.1.0+By+OptiJuegos.7z/file",
 "b1": "Bedrock"
 },
-"e5": {
+"e4": {
 "name": "OptiCraft 1.12",
 "l1": "https://www.mediafire.com/file/zijx9jtni7rf9pf/OptiCraft+1.12.0+By+OptiJuegos.7z/file",
 "l2": "https://www.mediafire.com/file/gc4eon4umkcoqzo/OptiCraft_JAVA_1.12.2_FORGE.7z/file",
 "b1": "Bedrock",
 "b2": "Java"
 },
-"e6": {
+"e5": {
 "name": "OptiCraft 1.14",
 "l1": "https://www.mediafire.com/file/lhucputck9z8vst/OptiCraft_1.14.31_By_OptiJuegos.7z/file",
 "b1": "Bedrock"
 },
-"e7": {
+"e6": {
 "name": "OptiCraft 1.16",
 "l1": "https://www.mediafire.com/file/y9cq2460i7ta155/OptiCraft_1.16.12_By_OptiJuegos_OpenGL_4.1.7z/file",
 "l2": "https://www.mediafire.com/file/xlfoayglwoinlgy/OptiCraft+Java+1.16.5.7z/file",
 "b1": "Bedrock",
 "b2": "Java"
 },
-"e8": {
+"e7": {
 "name": "OptiCraft 1.17",
 "l1": "https://www.mediafire.com/file/4eb3vj1duts6jqb/OptiCraft+1.17.30+By+OptiJuegos.7z/file",
 "b1": "Bedrock"
 },
-"e9": {
+"e8": {
 "name": "OptiCraft 1.18",
 "l1": "https://www.mediafire.com/file/snrlqprwhucgwzm/OptiCraft_1.18.31_By_OptiJuegos.7z/file",
 "b1": "Bedrock"
 },
-"e10": {
+"e9": {
 "name": "OptiCraft 1.19",
 "l1": "https://www.mediafire.com/file/r2hiodz1ki74ohr/OptiCraft+1.19.60+64+BITS.7z/file",
 "b1": "Bedrock"
 },
-"e11": {
+"e10": {
 "name": "OptiCraft 1.20",
 "l1": "https://www.mediafire.com/file/if7vo48hlkun1rd/OptiCraft+1.20.10+By+OptiJuegos.7z/file",
 "l2": "https://drive.google.com/file/d/1Yg6TZy0q3eypCk4rl0VTOyyAtQx7rE7y/view",
 "b1": "Bedrock",
 "b2": "Java"
 },
-"e12": {
+"e11": {
 "name": "OptiCraft Server Creator",
 "l1": "https://www.mediafire.com/file/nyqz3rrf2o7vzwl"
 },
-"e13": {
+"e12": {
 "name": "OptiCraft Skywars Server Creator 1.9",
-"l1": "https://www.mediafire.com/file/kcd2pgeljrkteaw/OptiCraft_Skywars_Creator_1.9.7z/file"
+"l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1186821594320998471/OptiCraft_Skywars_Creator_1.9.7z"
 },
-"e14": {
+"e13": {
 "name": "Lore del Juego",
-"l1": "https://docs.google.com/document/d/1Y6lxI8F0LJETPAxr1wkHbSrlqphIHVQOF_cGZFwJLD8/" ,
-"b1": "Leer"
+"l1": "https://docs.google.com/document/d/1Y6lxI8F0LJETPAxr1wkHbSrlqphIHVQOF_cGZFwJLD8/" 
 }
 },
 "t4": {
@@ -355,11 +343,11 @@
 }, 
 "e4": {
 "name": "Daemon Tools Lite Portable",
-"l1": "https://www.mediafire.com/file/zro0mrnpr94dkef/OptiPanas_Video_Compressor_V3.7z/file"
+"l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1138253045352910978/Daemon_Tools_Lite_Portable.7z"
 },
 "e5": {
 "name": "Driver Booster Portable",
-"l1": "https://www.mediafire.com/file/o547i07igt8wcy1/DriverBooster.7z/file"
+"l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1167664981077131274/DriverBooster.7z"
 },
 "e6": {
 "name": "DXCPL",
@@ -371,7 +359,7 @@
 },
 "e8": {
 "name": "Game Booster",
-"l1": "https://www.mediafire.com/file/h4pr0q0kri8krbq/Game_Booster.zip/file"
+"l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1079130749350981692/Game_Booster.zip"
 },
 "e9": {
 "name": "Instalador Visual C++ - DirectX",
@@ -379,7 +367,7 @@
 },
 "e10": {
 "name": "IOBit Unlocker",
-"l1": "https://cdn.discordapp.com/attachments/1179815139474669629/1211417965610926140/IObit_Unlocker.7z?ex=65ee1fe6&is=65dbaae6&hm=75bc4bb67e7d97d2c086438849d3da0e661840fe9a627820b349eb9bcdb94102&"
+"l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1179531577957548124/IObit_Unlocker.7z"
 },
 "e11": {
 "name": "Java OpenGL Mesa",
@@ -387,7 +375,7 @@
 },
 "e12": {
 "name": "LighterOBS",
-"l1": "https://www.mediafire.com/file/6nokvoua4w4vmyt/LighterOBS_No_Browser_By_OptiJuegos.7z/file"			
+"l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1165862996849999922/LighterOBS_No_Browser_By_OptiJuegos.7z"			
 },
 "e13": {
 "name": "Limpiar Espacio",
@@ -411,11 +399,11 @@
 },
 "e18": {
 "name": "OptiPanas Video Compressor",
-"l1": "https://www.mediafire.com/file/zro0mrnpr94dkef/OptiPanas_Video_Compressor_V3.7z/file"
+"l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1174127776379437086/OptiPanas_Video_Compressor_V3.7z"
 },
 "e19": {
 "name": "Optimizar PC",
-"l1": "https://www.mediafire.com/file/lozvr7n1czkjum3/Optimizar_PC_V5.4.zip/file"
+"l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1167912564848595034/Optimizar_PC_V5.4.zip"
 },
 "e20": {
 "name": "Photoshop CS6",
