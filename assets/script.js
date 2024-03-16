@@ -44,7 +44,7 @@ fetch("information.json")
 // ------------------------ Defaults ------------------------ //
 
 tab = {}
-tab.selected = "t3"
+tab.selected = "t4"
 entry = {}
 infoMenuOpen = false
 expandedServerList = false
@@ -189,7 +189,7 @@ function changeTab(id) {
     document.getElementById("tabSubtitle").innerHTML = elementsData[tab.selected].subtitle
 
     // Hide/Unhide server list
-    if (tab.selected === "t3") {
+    if (tab.selected === "t4") {
         document.getElementById("serverInfo").style.display = "block"
     } else {
         document.getElementById("serverInfo").style.display = "none"
