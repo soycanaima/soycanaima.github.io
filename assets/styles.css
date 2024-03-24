@@ -72,19 +72,19 @@ body {
 }
 
 #socialContainer {
-    width: 155px;
+    width: 168px;
     height: 32px;
     top: auto;
     right: auto;
     bottom: 20px;
-    left: 89px;
+    left: 64px;
     position: absolute;
     display: flex;
 }
 .socialButton {
     background-repeat: no-repeat;
     background-position: center;
-    width: 80%;
+    width: 50%;
     height: 100%;
     transition: 0.1s ease-out;
 }
