@@ -47,7 +47,6 @@ tab = {}
 tab.selected = "t4"
 entry = {}
 infoMenuOpen = false
-expandedServerList = false
 
 document.getElementById("entryContainer").scrollTo({top: 0})
 
@@ -77,11 +76,6 @@ document.getElementById("tabContainer").addEventListener("mousedown", function(e
 
 changeTab(tab.selected)
 
-
-
-// ------------------------ Server list ------------------------ //
-
-document.getElementById("expandServers").addEventListener("click", expandServerList)
 
 // ------------------------ Entries ------------------------ //
 
@@ -312,23 +306,6 @@ function infoMenu() {
 }
 
 
-function expandServerList() {
-    if (expandedServerList) {
-        expandedServerList = false
-        document.getElementById("serverText").style.display = "none"
-        document.getElementById("serverInfo").style.height = "50px"
-        document.getElementById("expandServers").style.display = "block"
-        document.getElementById("expandServers").innerHTML = "<b>Expandir servidores...</b>"
-    } else {
-        expandedServerList = true
-        document.getElementById("serverText").style.display = null
-        document.getElementById("serverText").style.height = "100%"
-        document.getElementById("serverInfo").style.height = null
-        document.getElementById("expandServers").style.display = "block"
-        document.getElementById("expandServers").innerHTML = "<b>Contraer servidores...</b><hr>"
-    }
-}
-
 
 // Enable/disable compact mode
 function compactMode() {
@@ -346,10 +323,7 @@ function compactMode() {
         document.getElementById("socialContainer").style.top = "auto"
         document.getElementById("socialContainer").style.bottom = "20px"
         document.getElementById("socialContainer").style.left = "89px"
-        document.getElementById("serverInfo").style.width = "240px"
-        document.getElementById("serverInfo").style.left = "13px"
-        document.getElementById("serverInfo").style.bottom = "68px"
-
+        
         // This changes a CSS variable which is used for the tab buttons
         document.documentElement.style.setProperty("--tabWidth", "180px")
     } else {
@@ -358,21 +332,7 @@ function compactMode() {
         document.getElementById("tabContainer").style.width = tab.amount * 140 + "px"
         document.getElementById("mainContainer").style.left = null
         document.getElementById("socialContainer").style = null
-        document.getElementById("serverInfo").style.width = null
-        document.getElementById("serverInfo").style.left = null
-        document.getElementById("serverInfo").style.bottom = null
         document.documentElement.style.setProperty("--tabWidth", "180px")
-    }
-
-    if (window.innerHeight < 640) {
-        document.getElementById("expandServers").style.display = "block"
-        expandedServerList = true
-        expandServerList()
-    } else {
-        expandedServerList = false
-        expandServerList()
-        document.getElementById("expandServers").style.display = "none"
-        document.getElementById("serverText").style.height = "calc(100% - 26px)"
     }
 
     if (window.innerHeight < 575) {
