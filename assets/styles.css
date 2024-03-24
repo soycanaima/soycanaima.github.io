@@ -335,15 +335,6 @@ background-color: #888;
  background-color: #555;
 }
 
-
-#expandServers {
-    display: none;
-    font-size: 22px;
-    user-select: none;
-    cursor: pointer;
-    padding: 12px 0px 0px;
-}
-
 hr {
     margin: 6px 0px 0px;
 }

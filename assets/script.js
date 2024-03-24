@@ -322,7 +322,7 @@ function compactMode() {
         document.getElementById("socialContainer").style.right = "auto"
         document.getElementById("socialContainer").style.top = "auto"
         document.getElementById("socialContainer").style.bottom = "20px"
-        document.getElementById("socialContainer").style.left = "89px"
+        document.getElementById("socialContainer").style.left = "64px"
         
         // This changes a CSS variable which is used for the tab buttons
         document.documentElement.style.setProperty("--tabWidth", "180px")
@@ -337,6 +337,7 @@ function compactMode() {
 
     if (window.innerHeight < 575) {
         document.getElementById("mainContainer").style.height = window.innerHeight + "px"
+        document.getElementById("serverInfo").style.height = window.innerHeight - 450 + "px"
         document.getElementById("mainBox").style.height = window.innerHeight - 124 + "px"
         document.getElementById("listBox").style.height = window.innerHeight - 194 + "px"
     } else {
