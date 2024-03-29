@@ -143,7 +143,7 @@ body {
 }
 /* This is separated so that the styles don't get overrided by the transparent scrollbar */
 .entryContainer {
-    width: 105%;
+    width: 99%;
     height: calc(100% - 15px);
     margin-top: 2px;
     padding-top: 2px;
