@@ -322,7 +322,7 @@
 },
 "e58": {
 "name": "Solitario",
-"l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1215448179567231027/Solitario.7z?ex=660603d3&is=65f38ed3&hm=e89f7c26644ace39b2b78fa688424e8cee21915f13f1a604bf96866978de3778&"
+"l1": "https://web.archive.org/web/20240325004216/https://cdn.discordapp.com/attachments/1069748073955348550/1215448179567231027/Solitario.7z?ex=660603d3&is=65f38ed3&hm=e89f7c26644ace39b2b78fa688424e8cee21915f13f1a604bf96866978de3778&"
 },
 "e59": {
 "name": "Sonic 1",
@@ -452,7 +452,7 @@
 "b1": "Bedrock"
 },
 "e11": {
-"name": "OptiCraft 1.20",
+"name": "OptiCraft 1.20 *JAVA ACTUALIZADO 1.20.4*",
 "l1": "https://www.mediafire.com/file/if7vo48hlkun1rd/OptiCraft+1.20.10+By+OptiJuegos.7z/file",
 "l2": "https://drive.google.com/file/d/1Yg6TZy0q3eypCk4rl0VTOyyAtQx7rE7y/view",
 "b1": "Bedrock",
@@ -634,6 +634,10 @@
 "e6": {
 "name": "OptiOS PE 7.1 (Android X86)",
 "l1": "https://www.mediafire.com/file/yxpq2c2sqh4autm"
+},
+"e7": {
+"name": "TomexOS V2 LTSC (Windows 10)",
+"l1": "https://www.mediafire.com/file/2ne9gn67l6kgto8/"
 }
 }
 }
