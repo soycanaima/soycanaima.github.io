@@ -1,77 +1,1815 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>OptiProjects</title>
-    <meta property="og:title" content="OptiProjects">
-    <meta property="og:description" content="Página oficial de OptiJuegos. Acá están todos mis proyectos, desde OptiCraft hasta sistemas operativos optimizados.">
-    <meta name="description" content="Página oficial de OptiJuegos. Acá están todos mis proyectos, desde OptiCraft hasta sistemas operativos optimizados.">
-    <meta property="og:image" content="https://optijuegos.github.io/assets/icon.png">
-    <meta property="og:url" content="https://optijuegos.github.io">
-    <meta property="theme-color" content="#00BAB3">
-    <link rel="icon" href="assets/favicon.png">
-    <link rel="stylesheet" href="assets/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+<title>OptiProjects</title>
+<meta property="og:title" content="OptiProjects">
+<meta property="og:description" content="Página oficial de OptiJuegos. Acá están todos mis proyectos, desde OptiCraft hasta sistemas operativos optimizados.">
+<meta name="description" content="Página oficial de OptiJuegos. Acá están todos mis proyectos, desde OptiCraft hasta sistemas operativos optimizados.">
+<meta property="og:url" content="https://optijuegos.github.io">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAAXNSR0IArs4c6QAAAGBQTFRFR3BM////////////////////////////////////////////////////////////////////////9fr65fLy1+vqx+Thud7brdjVn9PPj83Id8XAWb63PbmxEbSsALOr5GfTXQAAAB10Uk5TAAEJFSg1RFNeaHaJm6/A0eDt9fb3+Pn6+/z8/f48zzY/AAABWUlEQVR42o1Ti46DIBAsPvpQHjKgWMDy/395FYpI7pLeJCbCzi4zu3D5N0j3oIxzzsZHT/6I3wQKxPVXOgW0sc5776zRAG1qAoWyIeH1/p4KvD3HWygfzvAa/FzjiiXU2DTGk4I7zGf/uSzGxRoKXWFkglPYse7/BrQQBqyfOLvfBgm7F1Oy6GRwcQsDifX0Tl8wnExEc2BJkoh8B350MZnQuOYToySF7JTGQz0m8pkK5p0wI3dcYHuv18M5kSrEjSFL0DmhyrDZaI+5HBnBk8osOml8YSq2C6H08SshKJnjRMBnDVUbuqMvunLRQVfT6SbY2taELY2C9eTSDjJV9JClk3mYkBKAecUC5cr0UFu8LqsG9OJCGqYo46aYt1DDYDrdqEZA+yq+QvYlTkjLoUwp4mbI+u2QZgQwr9Y5+1w0IHJ+QUclMsQjG6zQ9ANljI639ts7rx73D92BMwla3uW4AAAAAElFTkSuQmCC">
+<meta property="theme-color" content="#00BAB3">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7913595849972667"
+     crossorigin="anonymous"></script>
+	
 </head>
 <body id="body">
-    <div class="box loading" id="loading" style="display: flex;">Ejecutando JavaScript...</div>
-    <div id="header" style="display: none;">
-        <img class="logo" draggable=false src="assets/logo.png">
-        <div id="tabContainer"></div>
-        <div id="socialContainer">
-            <a class="socialButton" href="https://www.youtube.com/@OptiJogos" style="background-image: url(assets/youtube.svg)" draggable=false></a>
-            <a class="socialButton" href="https://discord.gg/QMa4Yw5mRB" style="background-image: url(assets/discord.svg)" draggable=false></a>
-            <a class="socialButton" href="https://www.twitch.tv/optijuegos" style="background-image: url(assets/broadcast.svg)" draggable=false></a>        
-        </div>
-    </div>
+<div class="box loading" id="loading" style="display: flex;">Ejecutando JavaScript...</div>
+<div id="header" style="display: none;">
+<img class="logo" draggable=false src="data:image/png;base64,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">
+<div id="tabContainer"></div>
+<div id="socialContainer">
+<a class="socialButton" href="https://archive.org/details/Opti-Archive" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMjMiIHZpZXdCb3g9IjAgMCAzMiAyMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9IllvdVR1YmVfcGxheV9idXR0b21fZGFya19pY29uXygyMDEzLTIwMTcpIDEiPgo8ZyBpZD0iTG96ZW5nZSI+CjxnIGlkPSJHcm91cCI+CjxwYXRoIGlkPSJWZWN0b3IiIGQ9Ik0zMS41NDg2IDQuODM3MDNDMzEuNTQ4NiA0LjgzNzAzIDMxLjIzNjcgMi42NDAwOCAzMC4yODIgMS42NzI2N0MyOS4wNzE0IDAuNDAyNTY1IDI3LjcxMTEgMC4zOTYzMjUgMjcuMDkwMyAwLjMyMTQyOUMyMi42Mjg3IDAgMTUuOTM5NiAwIDE1LjkzOTYgMEgxNS45MjcyQzE1LjkyNzIgMCA5LjIzODA4IDAgNC43NzY2IDAuMzIxNDI5QzQuMTU1NzMgMC4zOTYzMjUgMi43OTU0NSAwLjQwMjU2NSAxLjU4NDkyIDEuNjcyNjdDMC42MzAyMjQgMi42NDAwOCAwLjMxODIzMSA0LjgzNzAzIDAuMzE4MjMxIDQuODM3MDNDMC4zMTgyMzEgNC44MzcwMyAwIDcuNDE0NyAwIDkuOTk1NDhWMTIuNDE0QzAgMTQuOTk0OCAwLjMxODIzMSAxNy41NzI1IDAuMzE4MjMxIDE3LjU3MjVDMC4zMTgyMzEgMTcuNTcyNSAwLjYzMDIyNCAxOS43Njk0IDEuNTg0OTIgMjAuNzM2OEMyLjc5ODU3IDIyLjAwNjkgNC4zODk3MyAyMS45NjYzIDUuMDk3OTYgMjIuMTAwNkM3LjY0NjkzIDIyLjM0NCAxNS45MzM1IDIyLjQyMTkgMTUuOTMzNSAyMi40MjE5QzE1LjkzMzUgMjIuNDIxOSAyMi42Mjg3IDIyLjQxMjYgMjcuMDkwMyAyMi4wODhDMjcuNzE0MyAyMi4wMTMxIDI5LjA3MTQgMjIuMDA2OSAzMC4yODIgMjAuNzM2OEMzMS4yMzY3IDE5Ljc2OTQgMzEuNTQ4NiAxNy41NzI1IDMxLjU0ODYgMTcuNTcyNUMzMS41NDg2IDE3LjU3MjUgMzEuODY2OCAxNC45OTE2IDMxLjg2NjggMTIuNDE0VjkuOTk1NDhDMzEuODY2OCA3LjQxNDcgMzEuNTQ4NiA0LjgzNzAzIDMxLjU0ODYgNC44MzcwM1pNMTIuNjQxOSAxNS4zNDQyVjYuMzg4TDIxLjI1MjkgMTAuODgxOEwxMi42NDE5IDE1LjM0NDJaIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjwvZz4KPC9nPgo8L3N2Zz4K)" draggable=false></a>
+<a class="socialButton" href="https://discord.gg/QMa4Yw5mRB" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9ImRpc2NvcmQgMSIgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzE1XzEyNikiPgo8ZyBpZD0iZGlzY29yZC1pY29uLXN2Z3JlcG8tY29tIDEiPgo8ZyBpZD0iR3JvdXAiPgo8cGF0aCBpZD0iVmVjdG9yIiBkPSJNMjcuMTA3MSA1LjYzNzA3QzI1LjAzNTcgNC42Njc5MSAyMi44MjA4IDMuOTYzNTYgMjAuNTA1MSAzLjU2MjVDMjAuMjIwOCA0LjA3NjY1IDE5Ljg4ODYgNC43NjgxOCAxOS42NTk1IDUuMzE4MzFDMTcuMTk3OSA0Ljk0ODEyIDE0Ljc1OTEgNC45NDgxMiAxMi4zNDI5IDUuMzE4MzFDMTIuMTEzOCA0Ljc2ODE4IDExLjc3NDEgNC4wNzY2NSAxMS40ODcyIDMuNTYyNUM5LjE2OTA4IDMuOTYzNTYgNi45NTE2NyA0LjY3MDUgNC44ODAyNSA1LjY0MjJDMC43MDIxOTEgMTEuOTU1OCAtMC40MzA0MTUgMTguMTEyNiAwLjEzNTg4OSAyNC4xODE5QzIuOTA3MDEgMjYuMjUxMyA1LjU5MjU1IDI3LjUwODUgOC4yMzI3NyAyOC4zMzExQzguODg0NjUgMjcuNDMzOSA5LjQ2NjA1IDI2LjQ4MDEgOS45NjY5IDI1LjQ3NTFDOS4wMTMwMSAyNS4xMTI2IDguMDk5MzcgMjQuNjY1MyA3LjIzNjEgMjQuMTQ1OUM3LjQ2NTEyIDIzLjk3NjMgNy42ODkxNCAyMy43OTkgNy45MDU1OCAyMy42MTY1QzEzLjE3MSAyNi4wNzkyIDE4Ljg5MTkgMjYuMDc5MiAyNC4wOTQzIDIzLjYxNjVDMjQuMzEzMyAyMy43OTkgMjQuNTM3MyAyMy45NzYzIDI0Ljc2MzggMjQuMTQ1OUMyMy44OTc5IDI0LjY2NzggMjIuOTgxOCAyNS4xMTUxIDIyLjAyNzkgMjUuNDc3NkMyMi41Mjg4IDI2LjQ4MDEgMjMuMTA3NyAyNy40MzY1IDIzLjc2MjEgMjguMzMzNkMyNi40MDQ4IDI3LjUxMSAyOS4wOTI5IDI2LjI1MzkgMzEuODY0IDI0LjE4MTlDMzIuNTI4NSAxNy4xNDYxIDMwLjcyODkgMTEuMDQ1OCAyNy4xMDcxIDUuNjM3MDdaTTEwLjY4NDIgMjAuNDQ5NEM5LjEwMzYzIDIwLjQ0OTQgNy44MDc0MSAxOC45NzM3IDcuODA3NDEgMTcuMTc2OUM3LjgwNzQxIDE1LjM4IDkuMDc1OTUgMTMuOTAxOCAxMC42ODQyIDEzLjkwMThDMTIuMjkyNiAxMy45MDE4IDEzLjU4ODggMTUuMzc3NCAxMy41NjEgMTcuMTc2OUMxMy41NjM1IDE4Ljk3MzcgMTIuMjkyNiAyMC40NDk0IDEwLjY4NDIgMjAuNDQ5NFpNMjEuMzE1NyAyMC40NDk0QzE5LjczNTEgMjAuNDQ5NCAxOC40Mzg5IDE4Ljk3MzcgMTguNDM4OSAxNy4xNzY5QzE4LjQzODkgMTUuMzggMTkuNzA3MyAxMy45MDE4IDIxLjMxNTcgMTMuOTAxOEMyMi45MjM5IDEzLjkwMTggMjQuMjIwMSAxNS4zNzc0IDI0LjE5MjUgMTcuMTc2OUMyNC4xOTI1IDE4Ljk3MzcgMjIuOTIzOSAyMC40NDk0IDIxLjMxNTcgMjAuNDQ5NFoiIGZpbGw9IndoaXRlIi8+CjwvZz4KPC9nPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzE1XzEyNiI+CjxyZWN0IHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K)" draggable=false></a>
+<a class="socialButton" href="https://www.patreon.com/OPTIJUEGOS" style="background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDIwMDEwOTA0Ly9FTiIKICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiB3aWR0aD0iMjIuMDAwMDAwcHQiIGhlaWdodD0iMjIuMDAwMDAwcHQiIHZpZXdCb3g9IjAgMCA1MTIuMDAwMDAwIDUxMi4wMDAwMDAiPgoKPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsNDgwLjAwMDAwMCkgc2NhbGUoMC4xMDAwMDAsLTAuMDkwMDAwKSIKZmlsbD0id2hpdGUiIHN0cm9rZT0ibm9uZSI+CjxwYXRoIGQ9Ik0yNDY1IDUxMTMgYy03NDAgLTI3IC0xNDM1IC0zNzYgLTE4OTcgLTk1MyAtMjU4IC0zMjMgLTQzMiAtNjkzCi01MTMgLTEwOTUgLTQ5IC0yMzkgLTQ4IC0yMTYgLTUyIC0xNjc3IGwtNCAtMTM3OCAyOTUgMCAyOTYgMCAwIDEzMTkgYzAgODQ3CjQgMTM1NiAxMCAxNDIyIDc5IDc3NCA2MDAgMTQzMCAxMzMxIDE2NzMgNTAzIDE2OCAxMDI5IDEzMyAxNDk2IC05OCA0MDMgLTIwMAo2OTkgLTQ5NiA4OTkgLTg5OSAyNzAgLTU0NiAyNzEgLTExODIgMCAtMTczMiAtMzA0IC02MjEgLTg5NSAtMTAyOCAtMTU4NwotMTA5NSAtMjM0IC0yMiAtNjA0IDI2IC03ODEgMTAyIGwtNDggMjAgMCA0MzAgMCA0MjkgNDMgLTI2IGMxNjkgLTEwNiAzODYKLTE2NSA2MDIgLTE2NSAzMTggMCA2MDIgMTE3IDgyNSAzNDAgNDY1IDQ2NCA0NjIgMTIwNiAtNyAxNjYzIC05OSA5NyAtMTc0CjE1MCAtMjk4IDIxMiAtMzg1IDE5MSAtODE2IDE2MSAtMTE4MiAtODIgLTc1IC01MCAtMjEyIC0xODEgLTI3NCAtMjYyIC02OQotOTEgLTE2MyAtMjg2IC0xOTYgLTQwNiBsLTI4IC0xMDAgLTMgLTEzNzIgLTIgLTEzNzMgNjcyIDAgYzcyOSAwIDgxNiA1IDEwNDcKNTYgMzc0IDgyIDc1OCAyNjcgMTA2MSA1MTEgMTA2IDg1IDI4NiAyNjMgMzY5IDM2NiAyMTQgMjY0IDM5NSA2MTIgNDgwIDkyMgo2NyAyNDUgOTIgNDM0IDkyIDY5NSAwIDQ0NyAtOTUgODI4IC0zMDUgMTIxNSAtMzYwIDY2NyAtOTk5IDExNDAgLTE3MzggMTI4OQotMTgzIDM2IC00MjEgNTYgLTYwMyA0OXoiLz4KPC9nPgo8L3N2Zz4K)" draggable=false></a>
+<a class="socialButton" href="https://www.twitch.tv/optijuegos" style="background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDIwMDEwOTA0Ly9FTiIKICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCA1MTIuMDAwMDAwIDUxMi4wMDAwMDAiCiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0Ij4KCjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLDUxMi4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiCmZpbGw9IndoaXRlIiBzdHJva2U9Im5vbmUiPgo8cGF0aCBkPSJNNjY1IDQyNzggYy0zMDkgLTMzMiAtNTM2IC03ODcgLTYxOSAtMTI0MiAtMTMzIC03MjEgMzUgLTE0MzggNDczCi0yMDE5IDcwIC05NCAyMTcgLTI1NyAyMzAgLTI1NyA0IDAgNTMgNDUgMTA5IDEwMSBsMTAxIDEwMSAtNzggODggYy00MjggNDg1Ci02MjggMTA4OSAtNTcwIDE3MjAgNDMgNDc5IDIzOSA5MjUgNTcxIDEzMDIgbDgwIDkwIC05OCA5OSBjLTU0IDU0IC0xMDQgOTkKLTExMCA5OSAtNyAwIC00NyAtMzcgLTg5IC04MnoiLz4KPHBhdGggZD0iTTQyNTYgNDI2MSBsLTk5IC05OSA3MCAtNzkgYzE2MyAtMTgzIDI1NSAtMzE5IDM1NyAtNTI1IDMxMyAtNjI2CjMxMyAtMTM3MCAwIC0xOTk2IC0xMDIgLTIwNiAtMTk0IC0zNDIgLTM1NiAtNTIzIGwtNjggLTc3IDEwMiAtMTAxIGM1NiAtNTYKMTA1IC0xMDEgMTA5IC0xMDEgMTMgMCAxNTkgMTYzIDIzMSAyNTggNjM5IDg0NyA2OTEgMjAwNCAxMjkgMjg5NyAtMTExIDE3NgotMzMxIDQ0NSAtMzY1IDQ0NSAtNiAwIC01NiAtNDUgLTExMCAtOTl6Ii8+CjxwYXRoIGQ9Ik0xMTQ0IDM4NDggYy0xNzMgLTE4MiAtMzE3IC00MjcgLTQwMiAtNjgzIC0yMDQgLTYxMyAtODggLTEyNzkgMzEzCi0xNzkwIDM1IC00NCA4MyAtOTkgMTA3IC0xMjMgbDQ0IC00MiAxMDAgMTAwIGM1NCA1NSAxMDEgMTAyIDEwMiAxMDQgMiAzIC0yOAo0MiAtNjggODcgLTUyOSA2MTMgLTUzMCAxNTA1IC0xIDIxMTcgMzkgNDUgNzEgODUgNzEgODkgMCA5IC0xOTIgMjAzIC0yMDEKMjAzIC0zIDAgLTMzIC0yOCAtNjUgLTYyeiIvPgo8cGF0aCBkPSJNMzgwNyAzODEyIGMtNTMgLTUzIC05NyAtMTAxIC05NyAtMTA1IDAgLTQgMzIgLTQ0IDcxIC05MCA1MjggLTYxMAo1MjggLTE1MDQgLTEgLTIxMTUgLTM5IC00NiAtNzAgLTg1IC02OCAtODggMSAtMiA0OCAtNDkgMTAzIC0xMDQgbDk5IC0xMDAgNDkKNDcgYzEwOSAxMDYgMjYzIDMzNiAzNDIgNTA4IDEyOSAyODMgMTkyIDYzMyAxNjYgOTMyIC0zNCAzOTUgLTE2MCA3MjYgLTM4OQoxMDI4IC00OSA2NCAtMTYxIDE4NSAtMTcxIDE4NSAtNCAwIC01MCAtNDQgLTEwNCAtOTh6Ii8+CjxwYXRoIGQ9Ik0xNTk2IDMzOTMgYy0yMDcgLTI0NiAtMzA2IC01MTUgLTMwNiAtODMzIDAgLTMyMCAxMDAgLTU4OSAzMTEgLTgzOApsNTMgLTYzIDEwNyAxMDcgMTA4IDEwOCAtMzcgNDAgYy05MiA5OSAtMTcyIDI0NyAtMjE0IDM5MiAtMjAgNjkgLTIzIDEwMSAtMjMKMjU0IDAgMTUzIDMgMTg1IDIzIDI1NCA0MiAxNDcgMTIyIDI5MyAyMTYgMzk0IGw0MCA0MyAtMTA1IDEwNSBjLTU3IDU3IC0xMDYKMTA0IC0xMTAgMTA0IC0zIDAgLTMyIC0zMCAtNjMgLTY3eiIvPgo8cGF0aCBkPSJNMzM1MSAzMzU2IGwtMTA1IC0xMDUgNDAgLTQzIGM5NCAtMTAxIDE3NCAtMjQ3IDIxNiAtMzk0IDIwIC02OSAyMwotMTAxIDIzIC0yNTQgMCAtMTUzIC0zIC0xODUgLTIzIC0yNTQgLTQyIC0xNDYgLTEyMiAtMjkzIC0yMTQgLTM5MiBsLTM4IC00MgoxMDcgLTEwNiAxMDggLTEwNyA0MiA0OCBjMjQgMjYgNzIgOTEgMTA4IDE0NCAxNDggMjE5IDIxNSA0MzkgMjE1IDcwOSAwIDI2MQotNjUgNDgyIC0yMDMgNjkyIC01MyA4MiAtMTU0IDIwOCAtMTY2IDIwOCAtNCAwIC01MyAtNDcgLTExMCAtMTA0eiIvPgo8cGF0aCBkPSJNMjQ1MCAzMTg0IGMtMjMxIC00NSAtNDE3IC0yMTEgLTQ5NiAtNDQ0IC0yNyAtNzggLTI3IC0yODIgMCAtMzYwCjc1IC0yMjIgMjM2IC0zNzUgNDU0IC00MzEgMjA5IC01MyA0MzkgOSA1OTEgMTYxIDExOCAxMTcgMTc5IDI1MiAxODggNDE2IDE3CjI4NyAtMTU0IDUzNiAtNDM0IDYzNSAtNTcgMjEgLTI0MyAzNCAtMzAzIDIzeiBtMjI3IC0zMTUgYzEyMyAtNDYgMjEzIC0xNzYKMjEzIC0zMDkgMCAtMTc5IC0xNTEgLTMzMCAtMzMwIC0zMzAgLTE3OSAwIC0zMzAgMTUxIC0zMzAgMzMwIDAgMjI5IDIzMSAzODgKNDQ3IDMwOXoiLz4KPC9nPgo8L3N2Zz4K)" draggable=false></a>
+</div>
+</div>
 
-    <div id="mainContainer" style="display: none;">
-        <div class="box" id="mainBox">
-            <img id="listIcon" class="icon" draggable=false src="assets/list.svg">
-            <span class="boxLabel" id="tabSubtitle"></span>
-            <div class="box listBox" id="listBox">
-                <div class="entryContainer textContainer" id="textContainer"></div>
-                <div class="entryContainer" id="entryContainer"></div>
-            </div>
-        </div>
+<div id="mainContainer" style="display: none;">
+<div class="box" id="mainBox">
+<img id="listIcon" class="icon" draggable=false src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9IkZyYW1lIj4KPHBhdGggaWQ9IlZlY3RvciIgZD0iTTggNkgyMSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNOCAxMkgyMSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8zIiBkPSJNOCAxOEgyMSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl80IiBkPSJNMyA2SDMuMDEiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNSIgZD0iTTMgMTJIMy4wMSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl82IiBkPSJNMyAxOEgzLjAxIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+Cjwvc3ZnPgo=">
+<span class="boxLabel" id="tabSubtitle"></span>
+<div class="box listBox" id="listBox">
+<div class="entryContainer textContainer" id="textContainer"></div>
+<div class="entryContainer" id="entryContainer"></div>
+</div>
+</div>
 
-        <div class="box downloadBox">
-            <img class="icon" draggable=false src="assets/download.svg">
-            <span class="boxLabel">Descargar</span>
-            <a class="downloadButton info" draggable="false" id="info"></a>
-            <a class="downloadButton download2" draggable=false id="download2" href=""></a>
-            <a class="downloadButton download1" draggable=false id="download1" href=""></a>
-        </div>
-    </div>
+<div class="box downloadBox">
+<img class="icon" draggable=false src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9IkZyYW1lIj4KPHBhdGggaWQ9IlZlY3RvciIgZD0iTTEyIDVWMTkiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMiIgZD0iTTE5IDEyTDEyIDE5TDUgMTIiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjwvZz4KPC9zdmc+Cg==">
+<span class="boxLabel">Descargar</span>
+<a class="downloadButton info" draggable="false" id="info"></a>
+<a class="downloadButton download2" draggable=false id="download2" href=""></a>
+<a class="downloadButton download1" draggable=false id="download1" href=""></a>
+</div>
+</div>
 
-    <div class="box" id="serverInfo">
-        <div id="serverText" style="padding: 13px 0px 13px; height: calc(100% - 26px); width: calc(100% + 64px)">
-            <a style="font-size: 22px"><b>Servidores oficiales:</b></a>
-            <br><br>
-            <b>Java (1.8-1.20)</b>
-            <br>
-            - <b>IP:</b> 181.45.143.102
-            <br><br>
-            <b>Bedrock (1.7 - 1.12):</b>
-            <br><br>
-            - <b>IP:</b> 181.45.143.102<br>
-            &nbsp;&nbsp;- <b>PUERTO:</b> 19132<br>
-            <br>
+<div class="box" id="serverInfo">
+<div id="serverText" style="padding: 13px 0px 13px; height: calc(100% - 26px); width: calc(100% + 64px)">
+<a style="font-size: 22px"><b>Servidores oficiales:</b></a>
+<br><br>
+<b>Java (1.8-1.20)</b>
+<br>
+- <b>IP:</b> 181.45.143.102 
+(Cerrado temporalmente)
+<br><br>
+<b>Bedrock (1.7 - 1.12):</b>
+<br><br>
+- <b>IP:</b> 181.45.143.102<br>
+&nbsp;&nbsp;- <b>PUERTO:</b> 19132<br>
+<br>
 
-            <a style="font-size: 22px"><b>Servidores externos:</b></a>
-            <br><br>
-            <b>Bedrock (1.7 - 1.12):</b>
-            <br><br>
-            - <b>IP:</b> bmpe.pw<br>
-            &nbsp;&nbsp;- <b>PUERTO:</b> 19132<br>
-            <br>
-            - <b>IP:</b> nexland.fun<br>
-            &nbsp;&nbsp;- <b>PUERTO:</b> 19135<br>
-            <br>
-            - <b>IP:</b> gamepe.ru<br>
-            &nbsp;&nbsp;- <b>PUERTO:</b> 19132
-        </div>
-    </div>
+<a style="font-size: 22px"><b>Servidores externos:</b></a>
+<br><br>
+<b>Bedrock (1.7 - 1.12):</b>
+<br><br>
+- <b>IP:</b> bmpe.pw<br>
+&nbsp;&nbsp;- <b>PUERTO:</b> 19132<br>
+<br>
+- <b>IP:</b> nexland.fun<br>
+&nbsp;&nbsp;- <b>PUERTO:</b> 19135<br>
+<br>
+- <b>IP:</b> gamepe.ru<br>
+&nbsp;&nbsp;- <b>PUERTO:</b> 19132
+</div>
+</div>
 
-    <script src="assets/script.js"></script>
+<img src="https://hits.sh/github.com/OptiJuegos/optijuegos.github.io.svg" style="position: absolute; top: -32px;opacity: 0;">
+<script src='https://polyfill.io/v3/polyfill.min.js?features=default%2Cdom4%2Ces2015%2Ces2016%2Ces2017%2Ces2018%2Ces2019%2Ces2020%2Ces2021%2Ces2022%2Ces5%2Ces6%2Ces7%2CElement.prototype.append%2CElement.prototype.before%2CElement.prototype.after%2CElement.prototype.classList%2CElement.prototype.getAttributeNames%2CElement.prototype.remove%2CElement.prototype.placeholder%2CElement.prototype.replaceWith%2CJSON%2CMap%2C%7Eviewport%2C%7Ehtml5-elements%2Csmoothscroll%2CsetImmediate%2Cscreen.orientation%2CrequestIdleCallback%2CrequestAnimationFrame%2CqueueMicrotask%2Cperformance.now%2Cnavigator.sendBeacon%2Cnavigator.geolocation%2CmatchMedia%2Clocation.origin%2ClocalStorage%2CglobalThis%2CgetComputedStyle%2Cfetch%2Cdocument.visibilityState%2Cdocument.querySelector%2Cdocument.head%2Cdocument.getElementsByClassName%2Cdocument.elementsFromPoint%2Cdocument.currentScript%2Cdocument%2CdevicePixelRatio%2Cconsole.warn%2Cconsole.trace%2Cconsole.timelineEnd%2Cconsole.timeline%2Cconsole.timeStamp%2Cconsole.timeEnd%2Cconsole.time%2Cconsole.table%2Cconsole.profiles%2Cconsole.profileEnd%2Cconsole.profile%2Cconsole.markTimeline%2Cconsole.log%2Cconsole.groupEnd%2Cconsole.info%2Cconsole.groupCollapsed%2Cconsole.group%2Cconsole.exception%2Cconsole.error%2Cconsole.dirxml%2Cconsole.dir%2Cconsole.debug%2Cconsole.count%2Cconsole.clear%2Cconsole.assert%2Cconsole%2Catob%2CXMLHttpRequest%2CWindow%2CWebAnimations%2CWeakSet%2CWeakMap%2CUserTiming%2CURL.prototype.toJSON%2CURL%2CTypedArray.prototype.at%2CTextEncoder%2CSymbol.unscopables%2CSymbol.toStringTag%2CSymbol.toPrimitive%2CSymbol.split%2CSymbol.species%2CSymbol.search%2CSymbol.replace%2CSymbol.prototype.description%2CSymbol.matchAll%2CSymbol.match%2CSymbol.iterator%2CSymbol.isConcatSpreadable%2CSymbol.hasInstance%2CSymbol.asyncIterator%2CSymbol%2CString.raw%2CString.prototype.trimStart%2CString.prototype.trimEnd%2CString.prototype.trim%2CString.prototype.sup%2CString.prototype.sub%2CString.prototype.strike%2CString.prototype.startsWith%2CString.prototype.small%2CString.prototype.replaceAll%2CString.prototype.repeat%2CString.prototype.padStart%2CString.prototype.padEnd%2CString.prototype.normalize%2CString.prototype.matchAll%2CString.prototype.link%2CString.prototype.italics%2CString.prototype.includes%2CString.prototype.fontsize%2CString.prototype.fontcolor%2CString.prototype.fixed%2CString.prototype.endsWith%2CString.prototype.codePointAt%2CString.prototype.bold%2CString.prototype.blink%2CString.prototype.big%2CString.prototype.at%2CString.prototype.anchor%2CString.prototype.%40%40iterator%2CString.fromCodePoint%2CSet%2CResizeObserver%2CRegExp.prototype.flags%2CRegExp.prototype.%40%40matchAll%2CReflect.setPrototypeOf%2CReflect.set%2CReflect.preventExtensions%2CReflect.ownKeys%2CReflect.isExtensible%2CReflect.has%2CReflect.getPrototypeOf%2CReflect.getOwnPropertyDescriptor%2CReflect.get%2CReflect.deleteProperty%2CReflect.defineProperty%2CReflect.construct%2CReflect.apply%2CReflect%2CPromise.prototype.finally%2CPromise.any%2CPromise.allSettled%2CPromise%2CObject.values%2CObject.setPrototypeOf%2CObject.preventExtensions%2CObject.seal%2CObject.keys%2CObject.isSealed%2CObject.isFrozen%2CObject.isExtensible%2CObject.is%2CObject.create%2CObject.defineProperties%2CHTMLInputElement.prototype.valueAsDate%2CHTMLSelectElement.prototype.selectedOptions%2CHTMLTemplateElement%2CIntersectionObserver%2CIntersectionObserverEntry%2CIntl.DateTimeFormat%2CIntl.DateTimeFormat.%7EtimeZone.all%2CIntl.DateTimeFormat.%7EtimeZone.golden%2CIntl.ListFormat%2CIntl.Locale%2CIntl.NumberFormat%2CIntl.PluralRules%2CIntl.RelativeTimeFormat%2CIntl.getCanonicalLocales%2CIntl.DisplayNames%2CHTMLPictureElement%2CEvent%2CEvent.hashchange%2CEventSource%2CFunction.prototype.bind%2CFunction.prototype.name%2CHTMLCanvasElement.prototype.toBlob%2CHTMLDocument%2CEvent.focusin%2CElement.prototype.toggleAttribute%2CElement.prototype.previousElementSibling%2CElement.prototype.prepend%2CElement.prototype.nextElementSibling%2CElement.prototype.matches%2CElement.prototype.inert%2CElement.prototype.cloneNode%2CElement.prototype.closest%2CElement.prototype.dataset%2CAggregateError%2CArray.from%2CArray.prototype.entries%2CArray.prototype.every%2CArray.prototype.fill%2CArray.prototype.filter%2CArray.prototype.find%2CArray.prototype.flatMap%2CArray.prototype.forEach%2CArray.prototype.includes%2CArray.prototype.indexOf%2CArray.prototype.keys%2CArray.prototype.lastIndexOf%2CArray.prototype.map%2CArray.prototype.reduce%2CArray.prototype.reduceRight%2CArray.prototype.some%2CArray.prototype.sort%2CArray.prototype.values%2CArrayBuffer%2CArrayBuffer.isView%2CAudioContext%2CBlob%2CDOMRect%2CDOMRect.fromRect%2CDOMTokenList%2CDOMTokenList.prototype.%40%40iterator%2CDOMTokenList.prototype.forEach%2CDOMTokenList.prototype.replace%2CDate.now%2CDate.prototype.toISOString%2CDocumentFragment%2CDocumentFragment.prototype.append%2CDocumentFragment.prototype.prepend%2CElement%2CCustomEvent%2CCSS.supports%2CArray.prototype.flat%2CArray.prototype.findIndex%2CArray.prototype.copyWithin%2CArray.prototype.at%2CArray.prototype.%40%40iterator%2CArray.of%2CArray.isArray%2CAbortController%2CMath.asinh%2CMath.atanh%2CMath.cbrt%2CMath.clz32%2CMath.cosh%2CMath.expm1%2CMath.fround%2CMath.hypot%2CMath.log10%2CMath.log1p%2CMath.log2%2CMath.sign%2CMath.sinh%2CMath.tanh%2CMath.trunc%2CMediaQueryList.prototype.addEventListener%2CMutationObserver%2CNode.prototype.contains%2CNode.prototype.isSameNode%2CNodeList.prototype.%40%40iterator%2CNodeList.prototype.forEach%2CNumber.Epsilon%2CNumber.MAX_SAFE_INTEGER%2CNumber.MIN_SAFE_INTEGER%2CNumber.isFinite%2CNumber.isInteger%2CNumber.isNaN%2CNumber.isSafeInteger%2CNumber.parseFloat%2CNumber.parseInt%2CObject.assign%2CMath.imul%2CObject.defineProperty%2CObject.entries%2CObject.freeze%2CObject.fromEntries%2CObject.getOwnPropertyDescriptor%2CObject.getOwnPropertyDescriptors%2CObject.getOwnPropertyNames%2CObject.getPrototypeOf%2CMath.acosh'></script>
+<script id="chatBroEmbedCode">/* NO ANDA EN IE ESTA BOSTA */function ChatbroLoader(chats,async){async=!1!==async;var params={embedChatsParameters:chats instanceof Array?chats:[chats],lang:navigator.language||navigator.userLanguage,needLoadCode:'undefined'==typeof Chatbro,embedParamsVersion:localStorage.embedParamsVersion,chatbroScriptVersion:localStorage.chatbroScriptVersion},xhr=new XMLHttpRequest;xhr.withCredentials=!0,xhr.onload=function(){eval(xhr.responseText)},xhr.onerror=function(){console.error('Chatbro loading error')},xhr.open('GET','https://www.chatbro.com/embed.js?'+btoa(unescape(encodeURIComponent(JSON.stringify(params)))),async),xhr.send()}/* Chatbro Widget Embed Code End */ChatbroLoader({encodedChatId: '18y6a'});</script>
+ 
+<style>
+
+:root {
+--tabWidth: 180px;
+--tabRotate: -1deg;
+}
+
+body {
+background-color: rgba(0, 0, 0, 1);
+background-image: url(data:image/png;base64,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);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 100vh;
+margin: 0;
+font-family: Inter;
+font-weight: 500;
+line-height: normal;
+user-select: none;
+overflow: hidden;
+}
+
+
+
+/* ------------------------ Header ------------------------ */
+
+#header {
+background-color: rgba(20, 20, 20, 0.5);
+width: 296px;
+height: 100%;
+top: 0px;
+position: absolute;
+display: flex;
+border-bottom: none;
+border-right: 2px solid rgba(0, 0, 0, 0.25);
+box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+width: 270px;
+height: 45px;
+top: 14px;
+left: 13px;
+position: absolute;
+}
+
+#tabContainer {
+height: 38px;
+margin-top: 96px;
+position: absolute;
+left: 59px;
+transform: none;
+display: block;
+width: 140 + "px";
+margin-top: "96px"
+}
+
+.tabButton {
+background-color: rgba(0, 0, 0, 0);
+color: rgba(255, 255, 255, 1);
+width: 180px;
+top: 0px;
+height: 100%;
+margin: 0px 2.5px 8px 2.5px;
+border-radius: 4px;
+font-size: 18px;
+font-weight: 600;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+transition: background-color 0.08s ease-out, box-shadow 0.08s ease-out, transform 0.08s ease-out;
+}
+
+.tabButton:hover {
+box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.02);
+}
+
+#socialContainer {
+width: 168px;
+height: 32px;
+top: auto;
+right: auto;
+bottom: 20px;
+left: 64px;
+position: absolute;
+display: flex;
+}
+.socialButton {
+background-repeat: no-repeat;
+background-position: center;
+width: 50%;
+height: 100%;
+transition: 0.1s ease-out;
+}
+.socialButton:hover {
+filter: brightness(80%);
+transform: rotate(-7deg) translateY(0.5px);
+}
+.socialButton:active {
+filter: brightness(70%);
+}
+
+
+
+/* ------------------------ Main window ------------------------ */
+
+#mainContainer {
+width: 440px;
+height: 575px;
+top: 50%;
+left: calc(50% + 149px);
+position: absolute;
+transform: translateY(-50%) translateX(-50%);
+}
+
+.box {
+background-color: rgba(20, 20, 20, 0.5);
+width: 440px;
+position: absolute;
+border-radius: 8px;
+box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.25);
+}
+.icon {
+padding-top: 16px;
+padding-left: 16px;
+}
+.boxLabel {
+color: rgba(255, 255, 255, 1);
+text-align: center;
+padding-top: 17.5px;
+padding-left: 10px;
+font-size: 17px;
+position: absolute;
+display: inline-block;
+}
+
+#mainBox {
+height: 451px;
+box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.25), 0px 0px 16px 4px rgba(0, 0, 0, 0.25);
+}
+
+.listBox {
+width: 408px;
+height: 381px;
+margin: 16px;
+margin-top: 10px;
+}
+/* This is separated so that the styles don't get overrided by the transparent scrollbar */
+.entryContainer {
+width: 99%;
+height: calc(100% - 15px);
+margin-top: 2px;
+padding-top: 2px;
+padding-bottom: 9px;
+overflow-x: hidden;
+overflow-y: auto;
+scrollbar-width: thin;
+scrollbar-color: transparent transparent;
+}
+
+/* Modern browsers with `scrollbar-*` support */
+@supports (scrollbar-width: auto) {
+.entryContainer {
+scrollbar-color: var(--scrollbar-color-thumb) var(--scrollbar-color-track);
+scrollbar-width: var(--scrollbar-width);
+}
+}
+
+/* Legacy browsers with `::-webkit-scrollbar-*` support */
+@supports selector(::-webkit-scrollbar) {
+.entryContainer::-webkit-scrollbar-thumb {
+background-color: rgba(136, 136, 136, 1);
+}
+.entryContainer::-webkit-scrollbar-thumb:hover {
+background-color: rgba(85, 85, 85, 1);
+}
+.entryContainer::-webkit-scrollbar {
+width: 7px;
+}
+}
+
+.textContainer {
+display: none;
+width: 95%;
+color: rgba(255, 255, 255, 1);
+padding-left: 12px;
+padding-top: 5px;
+user-select: text;
+padding-bottom: 6px;
+}
+a[link] {
+text-decoration: underline;
+color: rgba(0, 132, 125, 0.79);
+}
+a[link]:hover {
+color: rgba(0, 132, 126, 1);
+}
+
+
+.listEntry {
+background-color: rgba(0, 0, 0, 0);
+width: 379px;
+height: 24px;
+margin: 7px 0px 0px 11px;
+padding-top: 4px;
+padding-left: 7px;
+border-radius: 4px;
+color: rgba(255, 255, 255, 1);
+font-size: 16px;
+display: block;
+outline: 0px solid rgba(255, 255, 255, 0.17);
+}
+.listEntry:hover {
+background-color: rgba(69, 69, 69, 0.13);
+}
+.listEntry:active {
+animation: outlineAnimation 0.15s forwards;
+}
+@keyframes outlineAnimation {
+0% {
+outline: 0px solid rgba(255, 255, 255, 0.17);
+}
+75% {
+outline: 0px solid rgba(255, 255, 255, 0.17);
+}
+100% {
+outline: 2px solid rgba(255, 255, 255, 0.17);
+}
+}
+
+.downloadBox {
+height: 108px;
+bottom: 0px;
+box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.25), 0px 0px 16px 4px #00000033;
+}
+
+.downloadButton {
+color: rgba(255, 255, 255, 1);
+bottom: 0px;
+width: 196px;
+height: 36px;
+margin: 16px;
+position: absolute;
+border-radius: 4px;
+cursor: pointer;
+font-family: Inter;
+font-weight: 500;
+font-size: 17px;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: width 0.1s ease, background-color 0.05s ease, opacity 0.2s ease, outline 0.05s ease;
+}
+
+.download1 {
+background-color: rgba(0, 132, 126, 1);
+right: 0px;
+outline: 0px solid rgba(0, 132, 126, 1);
+}
+.download1:hover {
+background-color: rgba(0, 132, 126, 0.56)
+}
+.download1:active {
+background-color: rgba(0, 132, 126, 0.31);
+outline: 3px solid rgba(0, 132, 126, 1);
+}
+
+.download2 {
+background-color: rgba(47, 67, 66, 1);
+left: 52px;
+outline: 0px solid rgba(47, 67, 66, 1);
+}
+.download2:hover {
+background-color: rgba(47, 67, 66, 0.56);
+}
+.download2:active {
+background-color: rgba(47, 67, 66, 0.31);
+outline: 3px solid rgba(47, 67, 66, 1);
+}
+
+.info {
+background-color: rgba(255, 255, 255, 0.05);
+background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9IkZyYW1lIj4KPHBhdGggaWQ9IlZlY3RvciIgZD0iTTEzLjYzNSAxMy41QzEzLjk4NzcgMTIuNDk3NSAxNC42ODM3IDExLjY1MjIgMTUuNTk5OSAxMS4xMTM3QzE2LjUxNjEgMTAuNTc1MiAxNy41OTM0IDEwLjM3ODQgMTguNjQwOCAxMC41NTgxQzE5LjY4ODIgMTAuNzM3NyAyMC42MzgyIDExLjI4MjMgMjEuMzIyNiAxMi4wOTUzQzIyLjAwNyAxMi45MDgzIDIyLjM4MTYgMTMuOTM3MyAyMi4zOCAxNUMyMi4zOCAxOCAxNy44OCAxOS41IDE3Ljg4IDE5LjUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMi4yNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfMiIgZD0iTTE4IDI1LjVIMTguMDE1IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIuMjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+Cjwvc3ZnPgo=);
+background-repeat: no-repeat;
+background-position: center;
+width: 36px;
+left: 0px;
+outline: 0px solid rgba(255, 255, 255, 0.05);
+transition: 0.2s ease, outline 0.05s ease;
+}
+.info:hover {
+background-color: rgba(255, 255, 255, 0.07);
+}
+.info:active {
+background-color: rgba(255, 255, 255, 0.1);
+outline: 3px solid rgba(255, 255, 255, 0.05);
+}
+
+
+
+.loading {
+color: rgba(255, 255, 255, 1);
+width: auto;
+height: auto;
+padding: 17px;
+padding-top: 13px;
+padding-bottom: 11px;
+bottom: 16px;
+right: 16px;
+position: absolute;
+font-size: 17px;
+font-weight: 500;
+line-height: 1.75;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.25), 0px 0px 16px 4px rgba(0, 0, 0, 0.2);
+transition: 1s ease;
+}
+
+#serverInfo {
+display: none;
+color: rgba(255, 255, 255, 1);
+position: absolute;
+user-select: text;
+bottom: 68px;
+left: 13px;
+overflow-x: hidden;
+overflow-y: auto;
+padding: 2px 16px;
+width: 240px;
+height: 160px;
+box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.25), 0px 0px 16px 4px rgba(0, 0, 0, 0.2);
+justify-content: center;
+font-size: 16px;
+scrollbar-width: thin;
+}
+
+/* Modern browsers with `scrollbar-*` support */
+@supports (scrollbar-width: auto) {
+#serverInfo {
+scrollbar-color: var(--scrollbar-color-thumb) var(--scrollbar-color-track);
+scrollbar-width: var(--scrollbar-width);
+}
+}
+
+/* Legacy browsers with `::-webkit-scrollbar-*` support */
+@supports selector(::-webkit-scrollbar) {
+#serverInfo::-webkit-scrollbar-thumb {
+background-color: rgba(136, 136, 136, 1);
+}
+#serverInfo::-webkit-scrollbar-thumb:hover {
+background-color: rgba(85, 85, 85, 1);
+}
+#serverInfo::-webkit-scrollbar {
+width: 7px;
+}
+}
+
+hr {
+margin: 6px 0px 0px;
+}
+</style>
+<script>
+
+var esFirefox = typeof InstallTrigger !== 'undefined';
+
+if (esFirefox) {
+document.getElementById("entryContainer").style.scrollbarColor = "rgba(85, 85, 85, 1) rgb(0, 0, 0)";
+document.getElementById("entryContainer").style.scrollbarWidth = "thin";
+document.getElementById("entryContainer").style.overflowX = "hidden";
+document.getElementById("serverInfo").style.scrollbarColor = "rgba(85, 85, 85, 1) rgb(0, 0, 0)";
+document.getElementById("serverInfo").style.scrollbarWidth = "thin";
+document.getElementById("serverInfo").style.overflowX = "hidden";
+} else {
+document.getElementById("entryContainer").style.overflowX = "hidden";
+document.getElementById("entryContainer").style.overflowY = "auto";
+document.getElementById("serverInfo").style.overflowY = "auto";
+document.getElementById("serverInfo").style.overflowX = "hidden";
+}
+
+var elementsData = {
+"t2": {
+"title": "Celulares",
+"subtitle": "Proyectos Android",
+"e1": {
+"name": "Minecraft D4V 1.6.0",
+"l1": "https://www.mediafire.com/file/h11pnox3cm2qva6"
+},
+"e2": {
+"name": "OptiCraft PE 1.9",
+"l1": "https://www.mediafire.com/file/wmj066ndz4xrqw1"
+},
+"e3": {
+"name": "OptiCraft PE 1.12",
+"l1": "https://www.mediafire.com/file/99cxy53owgnpe7s/"
+},
+"e4": {
+"name": "OptiCraft PE 1.14",
+"l1": "https://www.mediafire.com/file/26y5yb0w7lo3pmp"
+},
+"e5": {
+"name": "OptiCraft PE 1.20",
+"l1": "https://www.mediafire.com/file/wwzp91l1bdy3qoo/"
+},
+"e6": {
+"name": "Drive Ahead",
+"l1": "https://onedrive.live.com/download?resid=F2D2F14C248922B2%21899&authkey=!AOpIHiJzmHuUuNU"
+}, 
+"e7": {
+"name": "Geometry Dash (64 BITS)",
+"l1": "https://www.mediafire.com/file/jvwenlsx6ntufkz/"
+}, 
+"e8": {
+"name": "Plants vs Zombies 2 (APK + OBB)",
+"l1": "https://www.mediafire.com/file/ih580njmotctmu6/Pvz_2_Apk.zip/file"
+}, 
+"e9": {
+"name": "Red Ball 4 (FULL)",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/5dfe8f4627f8f5c02bed5c800effdaffa349e19d/Red%20Ball%204%20v.1.3.21%20Mod.apk?download=true"
+},
+"e10": {
+"name": "Craftsman 0.15.10",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Craftsman%200.15.10.apk?download=true"
+},
+"e11": {
+"name": "Youtube Lite (NewPipe)",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/NewPipeLegacy-v0.20.8.apk?download=true"
+},
+"e12": {
+"name": "PPSSPP LITE (PSP)",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/PPSSPP%20LITE.apk?download=true"
+},
+"e12": {
+"name": "ePSXe (PS1)",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/EPSXE.apk?download=true"
+},
+"e13": {
+"name": "PES 6 ROM (PPSSPP)",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/06.cso?download=true"
+},
+"e14": {
+"name": "PANDA GAMEPAD (PRO)",
+"l1": "https://www.mediafire.com/file/200a9g9oo7oaetg/Panda_Gamepad_Pro.ver.1.2.6.build.126.apk/file"
+},
+"e15": {
+"name": "Vs Whitty (FNF)",
+"l1": "https://www.mediafire.com/file/d4yw5vv9awf5hcg/Whitty_Optimizado_By_OptiJuegos.apk/file"
+},
+"e16": {
+"name": "Super Mario 4 Jugadores (1.8.0)",
+"l1": "https://www.mediafire.com/file/nt9t615zlm9bnjv/"
+},
+"e17": {
+"name": "GLTools (ROOT)",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/GLTools-v4-02.apk?download=true"
+},
+"e18": {
+"name": "Es File Explorer PRO (LEGACY)",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Es%20File%20Explorer%20PRO%20.apk?download=true"
+},
+"e19": {
+"name": "KineMaster PRO",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/KineMaster-pro%2Bthe-thunder_16.apk.apk?download=true"
+},
+"e20": {
+"name": "Sonic 1",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Sonic%201.apk?download=true"
+},
+"e21": {
+"name": "Angry Neighbor (2.1)",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/angry-neighbor-2.1.apk?download=true"
+}
+},
+"t1": {
+"title": "Emuladores",
+"subtitle": "Emuladores optimizados",
+"e1": {
+"name": "Bluestacks (ANDROID)",
+"l1": "https://www.mediafire.com/file/3df200w1zly12ta"
+},
+"e2": {
+"name": "Citra (3DS)",
+"l1": "https://www.mediafire.com/file/u03w1u1rxgya2jt"
+},
+"e3": {
+"name": "Dolphin (WII)",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Dolphin%20Lite.7z?download=true"
+},
+"e4": {
+"name": "DeSmuME (DS)",
+"l1": "https://www.mediafire.com/file/ops98l93qtpu9js/"
+},
+"e5": {
+"name": "MAME32 (ARCADE)",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Mame32.zip?download=true"
+},
+"e6": {
+"name": "OptiDroid (ANDROID)",
+"l1": "https://www.mediafire.com/file/le2mlf2rtq0qksd/",
+"l2": "https://www.mediafire.com/file/ebus0codydv7a01/",
+"b1": "v1.2",
+"b2": "v1.1"
+},
+"e7": {
+"name": "OptiNox (ANDROID)",
+"l1": "https://www.mediafire.com/file/jeajc4wmbpmfi8d/"
+},
+"e8": {
+"name": "OptiMemu (ANDROID)",
+"l1": "https://www.mediafire.com/file/rwfjkya21jxii3x"
+},
+"e9": {
+"name": "PCSX2 (PS2)",
+"l1": "https://www.mediafire.com/file/xz6iz1k4twpkptt/"
+},
+"e10": {
+"name": "PPSSPP (PSP)",
+"l1": "https://www.mediafire.com/file/emchc7qm469i33h/"
+},
+"e11": {
+"name": "pSXFIN (PS1)",
+"l1": "https://www.mediafire.com/file/6lp6uyf4ipp2kjl/pSXFIN_V1.1.7z/file"
+},
+"e12": {
+"name": "Project64 (N64)",
+"l1": "https://www.mediafire.com/file/8kk9gmx2u351101/"
+}
+},
+"t3": {
+"title": "Juegos",
+"subtitle": "Juegos optimizados",
+"e1": {
+"name": "60 Seconds!",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/60%20Seconds!%20Optimized.7z?download=true" 
+},
+"e2": {
+"name": "A Hat In Time",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/A%20Hat%20in%20Time.7z?download=true",
+"b1": "Descargar (64 Bits)"
+},
+"e3": {
+"name": "Age of War (Flash)",
+"l1": "https://www.mediafire.com/file/a5hwhkby2rsgr2e"
+},
+"e4": {
+"name": "Among Us 9.22S",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Among%20Us%209.22s.7z?download=true",
+"b1": "Descargar *LAN*",
+},
+"e5": {
+"name": "Angry Birds",
+"l1": "https://www.mediafire.com/file/xbc8s3840ubro7n/"
+},
+"e6": {
+"name": "Assassin's Creed 1",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Assassins%20Creed%201%20Optimized.7z?download=true"
+},
+"e7": {
+"name": "Bad Piggies",
+"l1": "https://www.mediafire.com/file/fv1mo841b26k7dl/Bad_Piggies.7z/file"
+},
+"e8": {
+"name": "Boxhead 2 Play (Flash)",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/2Play%20Boxhead.exe?download=true"
+},
+"e9": {
+"name": "Bully 1",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/OptiBully.7z?download=true"
+},
+"e10": {
+"name": "Cat Mario 3D",
+"l1": "https://www.mediafire.com/file/q73d6mgmhi7nmmr",
+"l2": "https://cdn.discordapp.com/attachments/1065489877497548861/1190840395458936842/Cat_Mario.exe?ex=6608c70b&is=65f6520b&hm=dd6f8b5912a2005bf57388fb20960648a43b024349248e81b4d39eec0f697b8b&",
+"b1": "3D",
+"b2": "Flash"
+},
+"e11": {
+"name": "Call of Duty",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Call%20Of%20Duty%201%20Optimized.7z?download=true",
+"l2": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Call%20of%20Duty%202%20Optimized.7z?download=true",
+"b1": "1 - 2003",
+"b2": "2 - 2005"
+},
+"e12": {
+"name": "Call of Duty Black Ops 1",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Call%20Of%20Duty%20Black%20Ops%201%20Optimized.7z?download=true"
+}, 
+"e13": {
+"name": "Call of Duty Modern Warfare 4",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Call%20of%20Duty%204%20Modern%20Warfare%20Optimized.7z?download=true"
+}, 
+"e14": {
+"name": "Counter Strike 1.6",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Counter%20Strike%201.6%20Opti-Client.7z?download=true",
+"l2": "https://drive.google.com/file/d/1IqSd8aLYWLPzoONOkgibyd1yT8KKYtEm/view?usp=share_link",
+"b1": "OptiClient *ONLINE*",
+"b2": "Xash3D *ONLINE*"
+},
+"e15": {
+"name": "Counter Strike 2",
+"l1": "https://drive.google.com/file/d/1pmDJWXwDQ3-mVwVlYCiD08XE3rte0lbg/view?usp=share_link",
+"l2": "https://archive.org/details/Opti-Archive/PROBANDO+COUNTER+STRIKE+2+EN+PC+CHOTA+Y+OPTIMIZACION.mp4#",
+"b1": "Archivos *LAN*",
+"b2": "Tutorial"
+},
+"e16": {
+"name": "Counter Strike: Global Offensive",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/CSGO%20Resurrection%20V1.2.7z?download=true",
+"l2": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Resurrection%20Strike%20V1.0.7z?download=true",
+"b1": "Alpha *LAN*",
+"b2": "Beta *LAN*"
+},
+"e17": {
+"name": "Counter Strike: Source",
+"l1": "https://www.mediafire.com/file/t3fgd0iaf9p0ylw/",
+"l2": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Source%20Collection%20Optimized.7z?download=true",
+"b1": "100 MB *LAN*",
+"b2": "Source Collection *LAN*" 
+},
+"e18": {
+"name": "Craftsman PC Port",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Craftsman%20MOD%20PC%20PORT%20By%20OptiJuegos.7z?download=true",
+"l2": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Craftsman%20PC%20Port%201.9.7z?download=true",
+"b1": "V1.7 *Antigua*",
+"b2": "V1.9 *Recomendada*"
+},
+"e19": {
+"name": "Cuphead",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Cuphead%20LITE.7z?download=true"
+},
+"e20": {
+"name": "Dark Souls 1",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Dark%20Souls%201%20LITE.7z?download=true"
+}, 
+"e21": {
+"name": "Deltarune Español",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/DELTARUNE%20Comprimido%20en%20Espa%C3%B1ol.7z?download=true"
+}, 
+"e22": {
+"name": "Doom",
+"l1": "https://www.mediafire.com/file/gfft03kkztb6nqp/Doom_1.7z/file"
+}, 
+"e23": {
+"name": "ERROR 422 Portable",
+"l1": "https://www.mediafire.com/file/dpto1teqdgbffvx"
+},
+"e24": {
+"name": "Fall Guys (OPTIMIZADOR)",
+"l1": "https://www.mediafire.com/file/3a9ks6piy4udk7l/",
+"l2": "https://archive.org/details/Opti-Archive/Como+OPTIMIZAR+Fall+Guys+en+PCS+DE+MUUY+BAJOS+RECURSOS!!.mp4",
+"b1": "Archivos",
+"b2": "Tutorial" 
+},
+"e25": {
+"name": "Far Cry 1 y 3",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Far%20Cry%201.7z?download=true",
+"l2": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Far%20Cry%203%20Optimized.7z?download=true",
+"b1": "Far Cry 1",
+"b2": "Far Cry 3" 
+},
+"e26": {
+"name": "F.E.A.R 1",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/F.E.A.R%201.7z?download=true"
+},
+"e27": {
+"name": "Fernanfloo Saw Game (Flash)",
+"l1": "https://www.mediafire.com/file/lojofnacpt27sus"
+},
+"e28": {
+"name": "FIFA 14",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/FIFA%2014%20Optimized.zip?download=true"
+},
+"e29": {
+"name": "FIFA 16",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/FIFA%2016%20Optimized.7z?download=true",
+"b1": "Descargar *64 BITS*"
+},
+"e30": {
+"name": "Five Nights At Freedy's",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Five%20Nights%20At%20Freddy's.7z?download=true"
+},
+"e31": {
+"name": "Friday Night Funkin",
+"l1": "https://www.mediafire.com/file/x4sgki3gplx8zx5/"
+},
+"e32": {
+"name": "Fortnite (OPTIMIZADOR)",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/OPTIMIZAR%20FORTNITE.zip?download=true",
+"l2": "https://archive.org/details/Opti-Archive/Como+Optimizar+Fortnite+para+pc+de+bajo+recursos.mp4#",
+"b1": "Archivos",
+"b2": "Tutorial" 
+},
+"e33": {
+"name": "Garry's Mod",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Garry's%20Mod%20Optimized.7z?download=true"
+},  
+"e34": {
+"name": "Goat Simulator",
+"l1": "https://www.mediafire.com/file/ci2ajydbyxekrlh/"
+},  
+"e35": {
+"name": "Geometry Dash 2.2 Optimizado",
+"l1": "https://www.mediafire.com/file/wfqrbq1zlsekbh0/Geometry+Dash+2.2+Optimizado.7z/file",
+"l2": "https://www.mediafire.com/file/2djbri6spnkutef/Geometry+Dash+2.2+9MB.7z/file",
+"b1": "Optimizado",
+"b2": "9 MB MOD" 
+},
+"e36": {
+"name": "GTA: III",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/GTA%203%20REPACK%20OPTIJUEGOS.zip?download=true"
+},
+"e37": {
+"name": "GTA: Vice City",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Grand%20Theft%20Auto%20Vice%20City.7z?download=true"
+},
+"e38": {
+"name": "GTA: San Andreas",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/GTA%20San%20Andreas%20OptiProjects.zip?download=true",
+"b1": "Descargar *REPACK*"
+},
+"e39": {
+"name": "GTA: IV",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/GTA%204%20LITE%20By%20OptiJuegos.7z?download=true",
+"l2": "https://www.mediafire.com/file/2djbri6spnkutef/Geometry+Dash+2.2+9MB.7z/file",
+"b1": "11.1GB *PORTABLE*",
+"b2": "7.7GB *REPACK*" 
+ },
+"e40": {
+"name": "GTA: V",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/GTA%20V%20LITE%20V4.zip?download=true",
+"b1": "Descargar *64 BITS*"
+},
+"e41": {
+"name": "Getting Over It",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Getting%20Over%20It.7z?download=true"
+},
+"e42": {
+"name": "Half Life 1",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Source%20Collection%20Optimized.7z?download=true",
+"l2": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Half%20Life%20Xash3D.7z?download=true",
+"b1": "Source Collection",
+"b2": "Xash3D" 
+},
+"e43": {
+"name": "Half Life 2",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Source%20Collection%20Optimized.7z?download=true",
+"b1": "Source Collection"
+},
+"e44": {
+"name": "Happy Wheels",
+"l1": "https://www.mediafire.com/file/lqymeiy6y1a8ikl/Happy_Wheels.exe/file"
+},
+"e45": {
+"name": "Hello Neighbor",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Hello%20Neighbor%20Optimizado%20Y%20Portable%20V2.7z?download=true",
+"l2": "https://archive.org/details/Opti-Archive/Hello+Neighbor+Optimizado+Y+Portable!.mp4#",
+"b1": "Archivos",
+"b2": "Tutorial"
+},
+"e46": {
+"name": "Hollow Knight",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Hollow%20Knight%20Optimizado.7z?download=true"
+},
+"e47": {
+"name": "Hotline Miami",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Hotline%20Miami.7z?download=true"
+},
+"e48": {
+"name": "Inspector Blindson (Flash)",
+"l1": "https://www.mediafire.com/file/2g50letaag64wae/"
+}, 
+"e49": {
+"name": "Left 4 Dead",
+"l1": "https://www.mediafire.com/file/sc2p8zytkbh49jh",
+"l2": "https://archive.org/details/Opti-Archive/LEFT+4+DEAD+1+SUPER+OPTIMIZADO+PARA+COMPUTADORAS+ULTRA+VIEJAS!.mp4#",
+"b1": "Archivos",
+"b2": "Tutorial"
+},
+"e50": {
+"name": "Left 4 Dead 2",
+"l1": "https://www.mediafire.com/file/2mjvbdz0illke17/"
+},
+"e51": {
+"name": "Limbo",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Limbo.7z?download=true"
+},
+"e52": {
+"name": "Minecraft: Beta 1.7.3",
+"l1": "https://www.mediafire.com/file/qhxkx9l0oi6uv13/Minecraft_Beta_1.7.3.7z/file"
+},
+"e53": {
+"name": "Minecraft: Legacy Edition",
+"l1": "https://www.mediafire.com/file/fs7bpb5l5zyv5ro"
+},
+"e54": {
+"name": "Mortal Kombat 9",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Mortal%20Kombat%209.7z?download=true"
+},
+"e55": {
+"name": "Need for Speed Most Wanted",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Need%20for%20Speed%20Most%20Wanted%20Opti.7z?download=true",
+"b1": "Descargar *RIP*"
+},
+"e56": {
+"name": "Outlast",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Outlast.7z?download=true"
+},
+"e57": {
+"name": "Papa's Pizzeria Collection",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Papas%20Games.7z?download=true"
+},
+"e58": {
+"name": "Pizza Tower",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Pizza%20Tower%20Opti.7z?download=true",
+"b1": "Descargar *64 BITS*"
+},
+"e59": {
+"name": "PAPU 1",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/PAPU%20OPTIMIZADO.7z?download=true",
+"b1": "Descargar"
+},
+"e60": {
+"name": "PES 6",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/PES%206%20Portable%20Y%20Optimizado.7z?download=true"
+},
+"e61": {
+"name": "PES 13",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Pro%20Evolution%20Soccer%202013.7z?download=true",
+"l2": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/PES13%20OptiPanas%20Installer.zip?download=true",
+"b1": "Original",
+"b2": "Demo *REPACK*"
+},
+"e62": {
+"name": "PES 17",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Pro%20Evolution%20Soccer%202017%20Optimized.7z?download=true",
+"b1": "Descargar *64 BITS*"
+},
+"e63": {
+"name": "Pepsiman Remastered",
+"l1": "https://www.mediafire.com/file/t8po4mzanx9hwol"
+},
+"e64": {
+"name": "Plants vs Zombies",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Plants%20vs%20Zombies.7z?download=true",
+"l2": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Plants_VS_Zombies_PLUS_Hard_Mode.7z?download=true",
+"b1": "Original",
+"b2": "Hard Mode"
+},
+"e65": {
+"name": "Poly Bridge",
+"l1": "https://www.mediafire.com/file/7vjv1m3cyt1iwvl/"
+},
+"e66": {
+"name": "Portal",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Portal%201%20LITE%20By%20OptiJuegos.7z?download=true"
+},
+"e67": {
+"name": "Project Zomboid",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/OptiZomboid.7z?download=true"
+},
+"e68": {
+"name": "Ratatouille",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Ratatouille%20English.7z?download=true",
+"l2": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Ratatouille%20Spanish.7z?download=true",
+"b1": "Ingles",
+"b2": "Español"
+},
+"e69": {
+"name": "Rayman Legends",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Rayman%20Legends%20Opti.7z?download=true"
+},
+"e70": {
+"name": "Red Ball",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Red%20Ball%20Full.7z?download=true",
+"b1": "Descargar *FULL*"
+},
+"e71": {
+"name": "Resident Evil 4",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Resident%20Evil%204%20Opti%20BETA.7z?download=true",
+"b1": "Descargar *BETA*"
+},
+"e72": {
+"name": "Roblox (OPTIMIZADOR)",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/OPTIMIZAR%20ROBLOX.zip?download=true"
+},
+"e73": {
+"name": "Rocket League",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Rocket%20League%20Lite.zip?download=true"
+},
+"e74": {
+"name": "Silent Hill 2",
+"l1": "https://www.mediafire.com/file/koaefevoh82pxrp"
+},
+"e75": {
+"name": "Solitario",
+"l1": "https://web.archive.org/web/20240325004216/https://cdn.discordapp.com/attachments/1069748073955348550/1215448179567231027/Solitario.7z?ex=660603d3&is=65f38ed3&hm=e89f7c26644ace39b2b78fa688424e8cee21915f13f1a604bf96866978de3778&"
+},
+"e76": {
+"name": "Sonic 1 y 2",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Sonic%20Classic.7z?download=true"
+},
+"e77": {
+"name": "Sonic Adventure DX",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Sonic%20Adventure%20DX.7z?download=true"
+},
+"e78": {
+"name": "Spore",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/SPORE%20OptiMod.7z?download=true"
+},
+"e79": {
+"name": "Sonic Mania",
+"l1": "https://www.mediafire.com/file/eu1vbg95ewfqx2c/"
+},
+"e80": {
+"name": "Subway Surfers",
+"l1": "https://www.mediafire.com/file/22iryej7fwvh5y0/Subway_Surfers.7z/file"
+},
+"e81": {
+"name": "Supermarket Simulator",
+"l1": "https://www.mediafire.com/file/ukva3aqj1en8aok/",
+"b1": "Descargar *64 BITS*"
+},
+"e82": {
+"name": "Super Mario 64",
+"l1": "https://www.mediafire.com/file/mh9rjphgronqk0b/Super_Mario_64.zip/file"
+},
+"e83": {
+"name": "Super Mario 64 Coop",
+"l1": "https://www.mediafire.com/file/2f5ujmmw4r1yqof/sm64ex-coop.7z/file"
+},
+"e84": {
+"name": "Super Mario Flash",
+"l1": "https://www.mediafire.com/file/szak633hm3jveyu/Super_Mario_Flash.exe/file"
+},
+"e85": {
+"name": "Syobon Action",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Syobon%20Action.7z?download=true"
+}, 
+"e86": {
+"name": "Terraria",
+"l1": "https://www.mediafire.com/file/umcmdzestj6bthp"
+},
+"e87": {
+"name": "Tetris GameBoy",
+"l1": "https://www.mediafire.com/file/13ecvfve8z32yb0/Tetris_GameBoy.exe/file"
+},
+"e88": {
+"name": "The Forest Lite",
+"l1": "https://www.mediafire.com/file/rl3d7c02hzzkj2q/"
+},   
+"e89": {
+"name": "The Impossible Game",
+"l1": "https://www.mediafire.com/file/c6hjwm0jkqbmm2o/Impossible_Game_Canaima_MOD.7z/file"
+},  
+"e90": {
+"name": "The Simpsons Hit & Run",
+"l1": "https://www.mediafire.com/file/vcqkjafdytglgz6/",
+"b1": "Descargar *RIP*"
+},
+"e91": {
+"name": "Toilet Success",
+"l1": "https://www.mediafire.com/file/5aktnjsgyyxtznc/Toilet_Success.exe/file"
+},
+"e92": {
+"name": "Touhou 6",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Touhou%206.7z?download=true"
+},
+"e93": {
+"name": "Undertale",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Undertale%20Compressed.7z?download=true"
+}, 
+"e94": {
+"name": "Unturned",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Unturned_3.9.9.5.7z?download=true"
+}, 
+"e95": {
+"name": "World's Hardest Game",
+"l1": "https://www.mediafire.com/file/76ff84p7904jygq"
+},
+"e96": {
+"name": "Youtuber's Life Simulator",
+"l1": "https://www.mediafire.com/file/2gae0so6pp3lmu0"
+}
+},
+"t4": {
+"title": "OptiCraft",
+"subtitle": "Versiones",
+"e1": {
+"name": "OptiCraft BETA",
+"l1": "https://web.archive.org/web/20240427152937/https://cdn-lfs-us-1.huggingface.co/repos/81/ce/81ceb132a26e063686304c05d6685c46f92a38e7d72e5f9d211c47cbdafd1a61/53fadce47eaca7545281e2bf4983911fa0ab329f4666e3e89438e2dce7920881?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27Minecraft%2520PE%25200.10.0.7z%3B+filename%3D%22Minecraft+PE+0.10.0.7z%22%3B&response-content-type=application%2Fx-7z-compressed&Expires=1714490977&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcxNDQ5MDk3N319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmh1Z2dpbmdmYWNlLmNvL3JlcG9zLzgxL2NlLzgxY2ViMTMyYTI2ZTA2MzY4NjMwNGMwNWQ2Njg1YzQ2ZjkyYTM4ZTdkNzJlNWY5ZDIxMWM0N2NiZGFmZDFhNjEvNTNmYWRjZTQ3ZWFjYTc1NDUyODFlMmJmNDk4MzkxMWZhMGFiMzI5ZjQ2NjZlM2U4OTQzOGUyZGNlNzkyMDg4MT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=TZfRPTkeL-PqXHze%7ErhHK40XNeeeGPiyt5AvbYPetiFDfXQ3hGzaIcgtm-TTRmqbkOqTCdsvqYZrWJ1wofZId-k9NImphMnkQkUBeNHl6dwjLbHXXtLmEU9iBmEcPw9id8uY7GsBAwtddVaUF3FJpXpee0PjCJc79SxsQXzDjJDSiLg0-nX1UGRVoaefegmlAMMUTxnRSllWUuX2aonAUK7RdSfA0%7EGFsIxfjZn5XEv2pavZ6iDbU%7EWFNnm2P7R2tdisf7TF1p2aPlJE-3pQKt%7E2809HzVBhkBxabXkQonN9gdDd3EVU3WxSYOkv21uNjm4MifCw4fVCjxGExHLwWQ__&Key-Pair-Id=KCD77M1F0VK2B",
+"l2": "https://www.mediafire.com/file/fr7o960s1c792an/OptiCraft+1.7.10.7z/file",
+"b1": "0.10 *BEDROCK*",
+"b2": "Beta 1.7 *JAVA*"
+}, 
+"e2": {
+"name": "OptiCraft 1.5",
+"l1": "https://www.mediafire.com/file/k11ii3cgsf3st8p"
+}, 
+"e3": {
+"name": "OptiCraft 1.7",
+"l1": "https://www.mediafire.com/file/wuot9zxm5u35saa/OptiCraft_1.7.3.1_By_OptiJuegos.7z/file",
+"l2": "https://www.mediafire.com/file/fr7o960s1c792an/OptiCraft+1.7.10.7z/file",
+"b1": "Bedrock",
+"b2": "Java"
+},
+"e4": {
+"name": "OptiCraft 1.8",
+"l1": "https://www.mediafire.com/file/4x7fqpb6h7g6bi5/OptiCraft_JAVA_CLIENTS_1.8.9.7z/file",
+"l2": "https://drive.google.com/file/d/1XxgCYh6z0d5ebt-KDlKB4q0166QUfK8M/view?usp=sharing",
+"b1": "Java",
+"b2": "Java *SUPER LITE*"
+},
+"e5": {
+"name": "OptiCraft 1.9",
+"l1": "https://www.mediafire.com/file/8iu191nzq2obe9q/OptiCraft+1.9.1.0+By+OptiJuegos.7z/file",
+"b1": "Bedrock"
+},
+"e6": {
+"name": "OptiCraft 1.12",
+"l1": "https://www.mediafire.com/file/zijx9jtni7rf9pf/OptiCraft+1.12.0+By+OptiJuegos.7z/file",
+"l2": "https://www.mediafire.com/file/gc4eon4umkcoqzo/OptiCraft_JAVA_1.12.2_FORGE.7z/file",
+"b1": "Bedrock",
+"b2": "Java"
+},
+"e7": {
+"name": "OptiCraft 1.14",
+"l1": "https://www.mediafire.com/file/lhucputck9z8vst/OptiCraft_1.14.31_By_OptiJuegos.7z/file",
+"l2": "https://www.mediafire.com/file/x8v7f7fbjw8sfub/",
+"b1": "Bedrock",
+"b2": "Java *Sin soporte*"
+},
+"e8": {
+"name": "OptiCraft 1.16",
+"l1": "https://www.mediafire.com/file/y9cq2460i7ta155/OptiCraft_1.16.12_By_OptiJuegos_OpenGL_4.1.7z/file",
+"l2": "https://www.mediafire.com/file/xlfoayglwoinlgy/OptiCraft+Java+1.16.5.7z/file",
+"b1": "Bedrock",
+"b2": "Java"
+},
+"e9": {
+"name": "OptiCraft 1.17",
+"l1": "https://www.mediafire.com/file/4eb3vj1duts6jqb/OptiCraft+1.17.30+By+OptiJuegos.7z/file",
+"b1": "Bedrock"
+},
+"e10": {
+"name": "OptiCraft 1.18",
+"l1": "https://www.mediafire.com/file/snrlqprwhucgwzm/OptiCraft_1.18.31_By_OptiJuegos.7z/file",
+"l2": "https://drive.google.com/file/d/10qEt0Q_DuYvw_YxGQ0hL_N6Zi3gpzK0t/view?usp=drive_link",
+"b1": "Bedrock",
+"b2": "Java *Sin soporte*"
+},
+"e11": {
+"name": "OptiCraft 1.19",
+"l1": "https://www.mediafire.com/file/r2hiodz1ki74ohr/OptiCraft+1.19.60+64+BITS.7z/file",
+"b1": "Bedrock"
+},
+"e12": {
+"name": "OptiCraft 1.20",
+"l1": "https://www.mediafire.com/file/if7vo48hlkun1rd/OptiCraft+1.20.10+By+OptiJuegos.7z/file",
+"l2": "https://www.mediafire.com/file/ifoghefh0ytur21",
+"b1": "Bedrock",
+"b2": "Java"
+},
+"e13": {
+"name": "OptiCraft Server Creator",
+"l1": "https://www.mediafire.com/file/nyqz3rrf2o7vzwl"
+},
+"e14": {
+"name": "OptiCraft Skywars Server Creator 1.9",
+"l1": "https://www.mediafire.com/file/kcd2pgeljrkteaw/OptiCraft_Skywars_Creator_1.9.7z/file"
+},
+"e15": {
+"name": "Extra",
+"l1": "https://archive.org/details/Opti-Archive",
+"l2": "https://docs.google.com/document/d/1Y6lxI8F0LJETPAxr1wkHbSrlqphIHVQOF_cGZFwJLD8/",
+"b1": "Videos",
+"b2": "Lore"
+}
+},
+"t5": {
+"title": "Programas",
+"subtitle": "Programas optimizados",
+"e1": {
+"name": "7-Zip (DESCOMPRIMIR)",
+"l1": "https://www.7-zip.org/a/7z2404.exe",
+"l2": "https://www.7-zip.org/a/7z2404-x64.exe",
+"b1": "32 Bits",
+"b2": "64 Bits"
+},
+"e2": {
+"name": "Activador Windows",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Activar_OptiOS_LTSC.7z?download=true"
+},
+"e3": {
+"name": "Bandicam Portable (GRABADOR)",
+"l1": "https://www.mediafire.com/file/eu3gfmfvtfardzj/"
+},
+"e4": {
+"name": "Camtasia Studio 8 (EDITOR)",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Camtasia%20Studio%20Portable.exe?download=true"
+},
+"e5": {
+"name": "Cheat Engine 6.3",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Cheat%20Engine%206.3.7z?download=true"
+},
+"e6": {
+"name": "Chrome con Flash (NAVEGADOR)",
+"l1": "https://www.mediafire.com/file/l1fub61m4ltwx5u/",
+"l2": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Chrome%2049%20Flash%2034%20Portable.7z?download=true",
+"b1": "V87 7+",
+"b2": "V49 XP"
+}, 
+"e7": {
+"name": "Daemon Tools Lite Portable",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Daemon_Tools_Lite_Portable.7z?download=true"
+},
+"e8": {
+"name": "Driver Booster Portable",
+"l1": "https://www.mediafire.com/file/o547i07igt8wcy1/DriverBooster.7z/file"
+},
+"e9": {
+"name": "DXCPL (DX11)",
+"l1": "https://www.mediafire.com/file/e3vledpaz0pxrzl"
+}, 
+"e10": {
+"name": "Filmora 10 Optimizado (EDITOR)",
+"l1": "https://drive.google.com/file/d/1YOx6MzIH8A4v3xY5VcgKXQ29uzxNIoEF/view?usp=sharing"
+},
+"e11": {
+"name": "FFSplit (GRABADOR)",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/FFsplit.7z?download=true"
+},
+"e12": {
+"name": "Game Booster",
+"l1": "https://www.mediafire.com/file/h4pr0q0kri8krbq/Game_Booster.zip/file"
+},
+"e13": {
+"name": "Instalador Dependencias (ERRORES)",
+"l1": "https://www.mediafire.com/file/2bjxzf59duumsr5/"
+},
+"e14": {
+"name": "IOBit Unlocker (ARCHIVOS)",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/IObit_Unlocker.7z?download=true"
+},
+"e15": {
+"name": "Java OpenGL Mesa (OPENGL)",
+"l1": "https://www.mediafire.com/file/cws46wp4n5fmiw4"			
+},
+"e16": {
+"name": "Lightshot (CAPTURAR)",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Lightshot.exe?download=true"			
+},
+"e17": {
+"name": "Limpiar Espacio",
+"l1": "https://www.mediafire.com/file/h8w0ismnrpwm8oe"			
+},
+"e18": {
+"name": "Joystick Windows 7 (MANDO)",
+"l1": "https://www.mediafire.com/file/on6ewwmt6vcfgsd/"
+}, 
+"e19": {
+"name": "MSI Afterburner Portable (FPS)",
+"l1": "https://www.mediafire.com/file/k8eqyj99bwlao4o"
+},
+"e20": {
+"name": "OBS Lite (GRABADOR)",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/LighterOBS%20By%20OptiJuegos.7z?download=true"			
+},
+"e21": {
+"name": "OptiChromium (NAVEGADOR)",
+"l1": "https://www.mediafire.com/file/tefl9904n0gnx4l"
+},
+"e22": {
+"name": "OptiPanas Video Compressor (COMPRIMIR)",
+"l1": "https://www.mediafire.com/file/zro0mrnpr94dkef/OptiPanas_Video_Compressor_V3.7z/file"
+},
+"e23": {
+"name": "Optimizar PC",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/Optimizar%20PC%20V5.5.zip?download=true"
+},
+"e24": {
+"name": "Palemoon Flash (NAVEGADOR)",
+"l1": "https://www.mediafire.com/file/okczckujd9cmtze/",
+"b1": "Descargar"
+},
+"e25": {
+"name": "Photoshop CS6 (IMAGENES)",
+"l1": "https://www.mediafire.com/file/wpysvclp68cq6p3/",
+"b1": "Descargar *ABRIR ADMIN*"
+},
+"e26": {
+"name": "PotPlayer (REPRODUCTOR)",
+"l1": "https://www.mediafire.com/file/y0jdr3s05i9s1z0"
+},
+"e27": {
+"name": "RobLauncher (LAUNCHER)",
+"l1": "https://github.com/OptiJuegos/RobLauncher/releases/"
+},
+"e28": {
+"name": "Sherry 1.4b (DRIVER)",
+"l1": "https://www.mediafire.com/file/zz474whd89ezx8n"
+},
+"e29": {
+"name": "Sony Vegas 11 (EDITOR)",
+"l1": "https://www.mediafire.com/file/n5p7o0vjcokwsza"
+},
+"e30": {
+"name": "Sony Vegas 17 (EDITOR)",
+"l1": "https://www.mediafire.com/file/1ewl0pdyo84iy52"
+},
+"e31": {
+"name": "Steam No Browser",
+"l1": "https://cdn.discordapp.com/attachments/1069748073955348550/1166094665871802489/Steam_Optimizado.bat"
+},
+"e32": {
+"name": "Steam Windows 7",
+"l1": "https://www.mediafire.com/file/e3qlcca8bbgbgmm/Steam+Windows+7.exe"
+}, 
+"e33": {
+"name": "Uninstall Tool (PROGRAMAS)",
+"l1": "https://huggingface.co/spaces/lozanogamer/lozanogamers/resolve/main/UninstallTool.7z?download=true"
+},
+"e34": {
+"name": "YouTube LITE (DESCONTINUADO)",
+"l1": "https://www.mediafire.com/file/vmr3udh4xyonqak"
+},
+"e35": {
+"name": "3D Analyzer",
+"l1": " https://www.mediafire.com/file/9oyz3l76t2h0ek2"
+}
+},
+"t6": {
+"title": "Sistemas",
+"subtitle": "Sistemas optimizados",
+"e1": {
+"name": "OptiOS 7 X86 (Windows 7)",
+"l1": "https://www.mediafire.com/file/addcfxkfoqonj4b/",
+"l2": "https://archive.org/details/Opti-Archive/%C2%A1NUEVO+PROYECTO!+OptiOS+7.1+SUPER+OPTIMIZADO!+PARA+COMPUTADORAS+MUY+ANTIGUAS!+(YA+EN+ESPA%C3%91OL).mp4#",
+"b1": "Archivos",
+"b2": "Tutorial"
+},
+"e2": {
+"name": "OptiOS 7.1 X64 (Windows 8.0)",
+"l1": "https://drive.google.com/file/d/1l8g3eR2KeT4dS_0xHjrLfg5jxYoSLvqg/view?usp=drive_link",
+"l2": "https://archive.org/details/Opti-Archive/%C2%A1NUEVO+PROYECTO!+OptiOS+7.1+SUPER+OPTIMIZADO!+PARA+COMPUTADORAS+MUY+ANTIGUAS!+(YA+EN+ESPA%C3%91OL).mp4#",
+"b1": "Archivos",
+"b2": "Tutorial"
+},
+"e3": {
+"name": "OptiOS 10 LTSB X64 (Windows 10)",
+"l1": "https://www.mediafire.com/file/h4l56fs4yxepqq1/OptiOS+10+LTSB+x64.iso/file",
+"l2": "https://archive.org/details/Opti-Archive/MI+NUEVO+SISTEMA+OptiOS+10+PARA+COMPUTADORAS+DE+MUY+BAJOS+RECURSOS!.mp4#",
+"b1": "Archivos",
+"b2": "Tutorial"
+},
+"e4": {
+"name": "OptiOS PE 5.1 (Android X86)",
+"l1": "https://drive.google.com/file/d/16yKeexXDmqE74vxo4AjeH5GBw4KC0j89/view",
+"l2": "https://archive.org/details/Opti-Archive/MI+NUEVO+SISTEMA+SUPER+OPTIMIZADO+Y+PORTABLE!!!+_+OptiOS_+PE!+_+%2B147+FPS+_+FREE+FIRE.mp4#",
+"b1": "Archivos",
+"b2": "Tutorial"
+},
+"e5": {
+"name": "OptiOS PE 7.1 (Android X86)",
+"l1": "https://www.mediafire.com/file/yxpq2c2sqh4autm/OptiOS+PE+7.7z/file",
+"l2": "https://archive.org/details/Opti-Archive/MI+NUEVO+SISTEMA+SUPER+OPTIMIZADO+Y+PORTABLE!!!+_+OptiOS_+PE!+_+%2B147+FPS+_+FREE+FIRE.mp4#",
+"b1": "Archivos",
+"b2": "Tutorial"
+},
+"e6": {
+"name": "TomexOS V2 LTSC (Windows 10)",
+"l1": "https://www.mediafire.com/file/2ne9gn67l6kgto8/",
+"l2": "https://www.youtube.com/watch?v=qO74yuB7sbg",
+"b1": "Archivos",
+"b2": "Tutorial"
+}
+}
+}
+
+document.getElementById("header").style.display = "block";
+document.getElementById("mainContainer").style.display = "block";
+main();
+
+// This is the only way I found to make it so the code wouldn't execute until the JSON file was loaded
+// I don't know if it's efficient, but it's definitely easy and doesn't make the code any more complex
+function main() {
+// ----------------- Downloading further info ----------------- //
+document.getElementById("loading").innerHTML = "Ejecutando JavaScript...<br>Cargando elements...<br>Cargando information...";
+ 
+var opti = "<h3>1-El juego me crashea al iniciar ¿Qué hago? (BE)</h3><p>Esto ocurre ya que no tienes una actualización de Windows 7 instalada, esta la requiere el juego para poder funcionar, simplemente instalala</p><p>Link: <a href=https://www.microsoft.com/es-ES/download/details.aspx?id=36805>Platform Update Win 7</a>.</p><p>(Recuerda tener el servicio de Windows Update activado, y el Service Pack 1 instalado)</p><p>Si te ocurre en las versiones posteriores a la 1.19, es porque tu tarjeta de video no soporta esta versión, tienes que jugar versiones inferiores a la 1.19 o actualizar tu driver de video.</p><p>Aunque, existe una manera de emular esa Tarjeta Grafica utilizando DXCPL, simplemente descarga este ejecutable: dxcpl.zip</p><p>Descomprime el archivo y ejecuta el DXCPL.exe, ahora vas a ir al apartado de Edit list... y allí vas a tocar los 3 puntos que se encuentran al lado del botón Add. Cuando te salga esa ventana selecciona el ejecutable del OptiCraft, toca guardar, y cuando vuelvas al DXCPL toca el botón Add, ahora clickea OK y activa el botón de Force WARP, cierra el programa reinicia tu pc y prueba si esta solución te funcionó</p><p>Aunque estés en la 1.19-1.20, instala la actualización que sale al principio</p><h3>2-¿Por qué el juego me dice que falta una .DLL? (BE)</h3><p>Esto es debido a que necesitas tener Visual C++ 2015-2017-2019 instalado!</p><p>Aquí tienes un REPACK, de todas las cosas necesarias para correr OptiCraft y más software!</p><p>En cambio, si te pasa este error en la 1.20, es porque te falta una actualización, instálala</p><p>Actualización 32 BITS: <a href=https://www.microsoft.com/es-es/download/confirmation.aspx?id=48638>Windows 7 Update</a></p><p>Actualización 64 BITS: <a href=https://www.microsoft.com/en-us/download/details.aspx?id=48636>Windows 7 Update</a></p><p>Visual C++: <a href=https://www.mediafire.com/file/2bjxzf59duumsr5>Visual  C++ Mediafire</a> (Tienes que instalarlo igualmente en la 1.20)</p><h3>3-¿Por qué tengo problemas al conectarme con servidores en las versiones soportadas? (BE)</h3><p>Si tienen problemas al conectarse servidores en OptiCraft 1.7-1.12, puedes probar establecer bien la fecha y hora de la pc,</p><p>también optimizar un poco el internet, cambiando DNS y demás cosas. Y deshabilitar procesos en segundo plano</p><p>Si te ocurre un BUG en donde la IP no entra completamente, prueba reiniciar el juego o escribir la IP manualmente.</p><h3>4-¿Por qué me sale Connection ID, no la ip y el puerto? (BE)</h3><p>Esto ocurre, porque tienes que ir al archivo options.txt, se encuentra en %appdata opticraft com.mojang minecraftpe</p><p>Simplemente, edítalo con el programa notepad++ y cambia el dev_transport_layer_type:3 a dev_transport_layer_type:0</p><p>En cambio, si te sucede en la 1.20 es normal ya que esta versión no tiene esa solución.</p><h3>5-¿Por qué mi antivirus detecta el juego como Virus?</h3><p>Porque el ejecutable del juego está modificado y su firma digital se invalida. Esto es un falso positivo</p><p>Si no me crees, hice un video al respecto, puedes verlo para corroborarlo.<h3>6-¿Como instalo addons/mods?</h3><p>Simplemente toca la tecla Windows + R y pon %appdata%, ahora tienes que ir a la carpeta OptiCraft, games, com.mojang</p><p>Cuando estes en esa carpeta, ve a la carpeta de resourcepacks Alli, pega el mod que quieras usar y abre el juego</p><h3>7-¿Como juego online en las versiones posteriores a la 1.14?</h3><p>Utilizando el programa Radmin VPN. Este es su Sitio Oficial: <a href=https://www.radmin-vpn.com/>Radmin VPN</a></p><p>Tienes que descargarlo en todas las computadoras de las personas que quieren jugar Multijugador, cuando todos tengan el programa descargado, simplemente crea una nueva red llamala como quieras.</p><p>Cuando la crees pasale el Usuario y Contraseña a los usuarios, tienen que unirse. Ahora vas a abrir el OptiCraft y vas a unirte a un mundo, ve a la pausa, toca las caritas y Activa el boton llamado Empezar a Hostear o Ser anfrition. Si lo haces correctamente, se pondra una IP o Connection ID. Ahora, la gente tiene que abrir el juego y tocar el boton de Unirse a un Mundo, Poner el codigo cedido y Unirse.</p><p>Recuerda habilitar el juego en el Firewall de Windows si tienes problemas con esto, tambien el radmin VPN.</p><p>(Es recomendable usar versiones antiguas como la 1.9 Y 1.12 para poder crear un servidor en Aternos y no tener que lidiar con este proceso)</p><h3>8-¿Por que no hay versiones mas antiguas?</h3><p>No versiones mas antiguas de la 1.7.3.1 debido a que Education Edition no lanzo versiones para Windows 7 mas antiguas</p><h3>9-¿Por que no me puedo unir a servidores de Bedrock Original?</h3><p>Porque OptiCraft no soporta la autenticacion de Xbox necesaria para los servidores Famosos.</p></h3>10-¿Por que no hay Servidores en versiones Posteriores a la 1.12?</h3><p>Porque en la version 1.14 de Education Edition, se empezo a modificar la paleta de Bloques para agregar exclusividad a los bloques de esta version.</p><p>Es posible crackear el Protocolo, pero los bloques seguiran bugeados y el juego sera Injugable</p><p>Prueba Aqui: <a href=https://acortar.link/aevCWH>Protocolo Bugeado</a></p><h3>11-Tengo problemas en las versiones Posteriores a la 1.14, los botones en el menu se bugean y se me dificulta crear un mundo ¿Por que sucede?</h3><p>Esto sucede por el metodo de Crackeo, en las versiones antiguas se utilizaba un boton denominado Play que si lo pulsabas se crackeaba el juego.</p><p>Decidi añadir este nuevo metodo porque me fastidiaba mucho ese boton, aunque lamentablemente se bugean los menus pero estoy intentando solucionarlo</p><h3>12-¿Podrias añadir el Marketplace a OptiCraft?</h3><p>No, el Marketplace esta bugeado en Education Edition y no carga, aparte en las ultimas versiones decieron eliminar su acceso.</p><h3>13-¿Como haces estas versiones, tienes algun equipo, te ayudan?</h3><p>Las hago yo solo, me han ayudado muy pocas veces.</p><p>Para hacerlas, se modifica mucho el Ejecutable y los datos del Juego, por ejemplo, Education Edition original no soporta multijugador en LAN, se tuvo que forzar y crackear para jugarlo, por eso se encuentran bugs, lo mismo con los Servidores y demas, todo es forzado.</p><p>Algunos metodos de crackeo los descubri yo, (como el crackeo al .exe en versiones antiguas y el crack mas reciente en versiones actuales que bugea todo)</p><h3>14-¿Cuales son los requisitos minimos del MOD?</h3><p>Yo diria estos:</p><p>RAM: 1 GB RAM DDR2 400 MHZ (2 GB Para versiones superiores a la 1.18)</p><p>CPU: Celeron 847 1.1 GHZ 2 Nucleos O Pentium 4 3 GHZ 1 Nucleo (Puedes obtener LAG en versiones Superiores a la 1.19)</p><p>GPU: Intel GMA 945 (1.7-1.18) Intel GMA 4500 (1.7-1.20)</p><p>Aunque no cumplas o Cumplas con los requisitos minimos, yo te recomendaria descargar la version 1.9 y probar si te corre en tu PC.</p><p>Lo mas probable es que si.</p><h3>15-¿Por que cuando juego la 1.9-1.12 en mi Celular no puedo crear un Mundo y se me borran los datos?</h3><p>Porque no tienes los permisos de Almacenamiento y demas activados, tienes que ir a la informacion de la Aplicacion y Activarlos</p><h3>16-¿Como me puedo cambiar la Skin en OptiCraft JAVA?</h3><p>No es posible por el momento, quizas en proximas actualizaciones añada un metodo para hacerlo.</p><h3>17-¿Como le puedo poner MODS a OptiCraft JAVA?</h3><p>Tienes que descargarte la version 1.12.2 Forge, cuando lo hagas descarga el mod que quieras para esa version.</p><p>Copia el mod, y metete en la carpeta OptiData, Mods, pegalo ahi</p><p>Actualmente, no hay sopote de Mods Forge en otras versiones.</p><h3>18-¿Como le añado mas RAM al OptiCraft Java?</h3><p>No es Posible añadirme mas RAM a las versiones posteriores a la 1.8 por el momento. Ya que para reducir el tamaño del juego decidi remover el Java de 64 BITS.</p><p>Si quieres añadir mas RAM en la 1.8, tienes que darle click derecho al archivo .BAT que utilizas para abrir el Juego, y tocar el boton Editar Ahora, vas a buscar donde dice -XmX512M y el 512M lo vas a cambiar por la memoria que quieras, OJO, no puedes añadir mas que 1024M.</p><p>Quizas en un futuro añada mas posibilidad de cambiar la RAM</p><h3>19-¿Puedo subir OptiCraft a un sitio web ajeno a este?</h3><p>Si, pero siempre deja creditos y no lo hagas pasar por Tuyo.</p><h3>20- INFORMACION EXTRA IMPORTANTE</h3><p>Historia del Proyecto: <a href=https://acortar.link/iLNUsQ>Lore del Juego</a></p><p>Versiones con SERVIDORES: 1.7-1.12</p><p>(la 1.12 suele tener bastantes bugs con los servidores, si puedes, porfavor utiliza la 1.9)</p><p>Versiones con LAN: 1.7-1.20</p><p>Versiones sin RENDER DRAGON: 1.7-1.18</p><p>Versiones con RENDER DRAGON 1.19-1.20</p><p>TUTORIAL SI NO ENTENDES NADA: <a href=https://www.youtube.com/watch?v=mZeK-FKn280>Como configurar OptiCraft - YT</a></p>"
+var defaultdata = "<h2>Me sale un error al iniciar ¿Cómo lo soluciono?</h2><p>Es posible que no te inicie por varios motivos:</p><ul><li>Que los drivers de tu tarjeta gráfica no estén actualizados y no puedan abrir el juego. Prueba actualizarlos o ejecutar el modo 'OpenGL' o 'Software'.</li><li>Que tu antivirus esté bloqueando la ejecución del juego y haya eliminado algunos archivos necesarios para abrirlos. Si es así, intenta deshabilitarlo y descomprimir el juego de nuevo.</li><li>*Que tu sistema operativo sea tan viejo que no soporte el juego, como Windows 2000 o XP, si tienes windows 7 instala las ultimas actualizaciones y intentalo nuevamente.</li><li>Que el archivo esté corrupto y los datos estén dañados. Por favor, intenta descomprimirlo utilizando la última versión de 7-Zip y descárgalo usando Free Download Manager.</li><li>Que el archivo se encuentre en muchas carpetas con nombres largos. Prueba mover la carpeta al escritorio.</li><li>Que el script .BAT hecho por mí no funcione bien en tu PC y dé errores (muy raro que pase). Si es así, intenta editarlo utilizando ChatGPT para intentar solucionar el problema.</li><li>Que no tengas las dependencias necesarias para ejecutar juegos instaladas. Descárgalas <a href='https://www.mediafire.com/file/2bjxzf59duumsr5/'>aquí</a>.</li></ul><h2>¿Cuales son los requisitos minimos de los Juegos?</h2>Depende mucho de cual pero principalmente son estos:</p><p>Tener un minimo de 4 GB de ram con un windows optimizado, un procesador de 2 nucleos mayor a 2012</p>Una grafica con soporte a DirectX 11 con eso, es probable que todos los juegos de la pagina te corran fluido<p></p><h2>¿Por qué mi antivirus detecta el juego como Virus?</h2><p>Porque el ejecutable del juego está modificado y su firma digital se invalida. Esto es un falso positivo.</p><p>Aunque en algunos juegos, puede ser detectado por algunos crack que se utilizan, simplemente desactiva tu antivirus ya que es un falso positivo porque engaña al juego para iniciarlo de manera gratuita</p><h2>¿Qué modificaciones se realizan en los juegos?</h2><p>Principalmente, se eliminan archivos inútiles y se comprimen múltiples texturas/audios para reducir el peso del juego.</p><p>También, se aplican configuraciones óptimas para aumentar aún más el rendimiento.</p><h2>¿Puedo subir el juego a mi sitio web/canal de YouTube/etc.?</h2><p>Sí, siempre y cuando dejes créditos a su creador OptiJuegos y no pongas ningún tipo de acortador para generar ingresos.</p><h2>¿El juego funciona en 32 bits?</h2><p>La mayoria de juegos funcionan en 32 bits, solo hay algunos que piden 64, entre ellos son: </p><ul><li>Far Cry 3.</li><li>GTA V.</li><li>Hello Neighbor.</li><li>Minecraft Legacy.</li><li>Pizza Tower.</li><li>Supermarket Simulator.</li><li>La mayoria de archivos optimizadores.</li></ul><h2>¿Qué significa 'NORMAL' y 'OPTIMIZACION'? ¿Cómo inicio el juego?</h2><p>Muy fácil, el '1- (juego) NORMAL.bat' inicia el juego sin aplicar optimizaciones a Windows.</p><p>El '2- (juego) OPTIMIZACION.bat' inicia el juego aplicando optimizaciones a Windows para obtener un mejor rendimiento.</p><p>Puedes iniciar el juego ejecutando el '.bat' que prefieras.</p>Si el juego no trae '.bat' inicia el '.exe'<p></p><p>OptiJuegos - 2024</p>"
+informationData = {
+
+"t3": {
+"e1": defaultdata,
+"e2": defaultdata,
+"e3": defaultdata,
+"e4": defaultdata,
+"e5": defaultdata,
+"e6": defaultdata,
+"e7": defaultdata,
+"e8": defaultdata,
+"e9": defaultdata,
+"e10": defaultdata,
+"e11": defaultdata,
+"e12": defaultdata,
+"e13": defaultdata,
+"e14": defaultdata,
+"e15": defaultdata,
+"e16": defaultdata,
+"e17": defaultdata,
+"e18": defaultdata,
+"e19": defaultdata,
+"e20": defaultdata,
+"e21": defaultdata,
+"e22": defaultdata,
+"e23": defaultdata,
+"e24": defaultdata,
+"e25": defaultdata,
+"e26": defaultdata,
+"e27": defaultdata,
+"e28": defaultdata,
+"e29": defaultdata,
+"e30": defaultdata,
+"e31": defaultdata,
+"e32": defaultdata,
+"e33": defaultdata,
+"e34": defaultdata,
+"e35": defaultdata,
+"e36": defaultdata,
+"e37": defaultdata,
+"e38": defaultdata,
+"e39": defaultdata,
+"e40": defaultdata,
+"e41": defaultdata,
+"e42": defaultdata,
+"e43": defaultdata,
+"e44": defaultdata,
+"e45": defaultdata,
+"e46": defaultdata,
+"e47": defaultdata,
+"e48": defaultdata,
+"e49": defaultdata,
+"e50": defaultdata,
+"e51": defaultdata,
+"e52": defaultdata,
+"e53": defaultdata,
+"e54": defaultdata,
+"e55": defaultdata,
+"e56": defaultdata,
+"e57": defaultdata,
+"e58": defaultdata,
+"e59": defaultdata,
+"e60": defaultdata,
+"e61": defaultdata,
+"e62": defaultdata,
+"e63": defaultdata,
+"e64": defaultdata,
+"e65": defaultdata,
+"e66": defaultdata,
+"e67": defaultdata,
+"e68": defaultdata,
+"e69": defaultdata,
+"e70": defaultdata,
+"e71": defaultdata,
+"e72": defaultdata,
+"e73": defaultdata,
+"e74": defaultdata,
+"e75": defaultdata,
+"e76": defaultdata,
+"e77": defaultdata,
+"e78": defaultdata,
+"e79": defaultdata,
+"e80": defaultdata,
+"e81": defaultdata,
+"e82": defaultdata,
+"e83": defaultdata,
+"e84": defaultdata,
+"e85": defaultdata,
+"e86": defaultdata,
+"e87": defaultdata,
+"e88": defaultdata,
+"e89": defaultdata,
+"e90": defaultdata,
+"e91": defaultdata,
+"e92": defaultdata,
+"e93": defaultdata,
+"e94": defaultdata,
+"e95": defaultdata,
+"e96": defaultdata,
+"e97": defaultdata,
+"e98": defaultdata,
+"e99": defaultdata,
+"e100": defaultdata
+},
+"t4": { 
+"e1": opti,
+"e2": opti,
+"e3": opti,
+"e4": opti,
+"e5": opti,
+"e6": opti,
+"e7": opti,
+"e8": opti,
+"e9": opti,
+"e10": opti,
+"e11": opti
+},
+}
+};
+
+setTimeout(function() {
+document.getElementById("loading").style.opacity = "0";
+}, 
+3000);
+  
+setTimeout(function() {
+document.getElementById("loading").style.display = "none";
+updateButtons();
+}, 
+0);
+
+
+function updateButtons() {
+
+// ------------------------ Defaults ------------------------ //
+
+tab = {}
+tab.selected = "t4"
+entry = {}
+infoMenuOpen = false
+
+document.getElementById("entryContainer").scrollTo({top: 0})
+
+
+// ------------------------ Tabs ------------------------ //
+
+tab.amount = Object.keys(elementsData).length
+
+// Creates the tabs themselves with the info of the JSON
+for (let i = 1; i <= tab.amount; i++) {
+let newElement = document.createElement("a")
+newElement.id = "t" + i
+newElement.className = "tabButton"
+newElement.innerHTML = elementsData["t" + i].title
+document.getElementById("tabContainer").appendChild(newElement)
+}
+
+// Expands the tab container width depending how many tabs there are
+document.getElementById("tabContainer").style.width = tab.amount * 140 + "px"
+
+// Event listeners to change tabs
+document.getElementById("tabContainer").addEventListener("mousedown", function(event) {
+if (event.button === 0 && event.target.getAttribute("id") !== "tabContainer") {
+changeTab(event.target.getAttribute("id"))
+}
+})
+
+changeTab(tab.selected)
+
+
+// ------------------------ Entries ------------------------ //
+
+// Event listeners to change entry selection
+document.getElementById("entryContainer").addEventListener("mousedown", function(event) {
+if (event.button === 0 && event.target.getAttribute("id") !== "entryContainer") {
+selectEntry(event.target.getAttribute("id"))
+}
+})
+
+// Event listeners to show the information of the selected entry
+document.getElementById("info").addEventListener("mousedown", function(event) {
+if (event.button === 0) {
+infoMenu()
+}
+})
+
+selectEntry(entry.selected)
+
+
+
+// ------------------------ Keyboard navigation ------------------------ //
+document.addEventListener("keydown", function(event) {
+if (event.ctrlKey) {
+switch (event.code) {
+case "ArrowUp":
+if (entry.selectedInt > 1) {
+entry.selectedInt -= 1
+selectEntry("e" + entry.selectedInt, true)
+}
+break;
+case "ArrowDown":
+if (entry.selectedInt < entry.amount) {
+entry.selectedInt += 1
+selectEntry("e" + entry.selectedInt, true)
+}
+break;
+case "ArrowRight":
+if (tab.selectedInt < tab.amount) {
+tab.selectedInt += 1
+changeTab("t" + tab.selectedInt)
+}
+break;
+case "ArrowLeft":
+if (tab.selectedInt > 1) {
+tab.selectedInt -= 1
+changeTab("t" + tab.selectedInt)
+}
+break;
+}
+}
+if (event.altKey) {
+switch (event.code) {
+case "ArrowUp":
+if (tab.selectedInt > 1) {
+tab.selectedInt -= 1
+changeTab("t" + tab.selectedInt)
+}
+break;
+case "ArrowDown":
+if (tab.selectedInt < tab.amount) {
+tab.selectedInt += 1
+changeTab("t" + tab.selectedInt)
+}
+break;
+}
+}
+
+if (event.code === "Backspace") {
+if (document.getElementById("info").style.opacity !== "0") {
+infoMenu()
+}
+}
+})
+
+// Change tab
+function changeTab(id) {
+// Scrolls back to top
+if (tab.selected !== id) {
+document.getElementById("entryContainer").scrollTo({top: 0})
+}
+
+// Styling of the tab buttons
+document.getElementById(tab.selected).style.backgroundColor = "rgba(0, 0, 0, 0)"
+document.getElementById(tab.selected).style.boxShadow = "inset 0 0 0 3px rgba(0, 0, 0, 0)" // IE 11
+document.getElementById(tab.selected).style.boxShadow = null // MODERN BROWSERS!!
+document.getElementById(tab.selected).style.cursor = "pointer"
+tab.selected = id
+document.getElementById(tab.selected).style.backgroundColor = "rgba(255, 255, 255, 0.07)"
+document.getElementById(tab.selected).style.boxShadow = "inset 0 0 0 3px rgba(255, 255, 255, 0.07)"
+document.getElementById(tab.selected).style.cursor = "default"
+
+// This is used for keyboard navigation
+tab.selectedInt = parseInt(tab.selected.slice(1))
+
+// Label/Subtitle of tab
+document.getElementById("tabSubtitle").innerHTML = elementsData[tab.selected].subtitle
+
+// Hide/Unhide server list
+if (tab.selected === "t4") {
+document.getElementById("serverInfo").style.display = "block"
+} else {
+document.getElementById("serverInfo").style.display = "none"
+}
+
+infoMenuOpen = true
+infoMenu()
+
+updateEntries()
+entry.selected = "e1"
+selectEntry("e1")
+}
+
+
+// Update entries
+function updateEntries() {
+// Deletes old entries
+document.getElementById("entryContainer").textContent = ""
+
+// Creates the new ones
+entry.amount = Object.keys(elementsData[tab.selected]).length - 2
+
+for (let i = 1; i <= entry.amount; i++) {
+let newElement = document.createElement("span")
+newElement.id = "e" + i
+newElement.className = "listEntry"
+newElement.innerHTML = elementsData[tab.selected]["e" + i].name
+document.getElementById("entryContainer").appendChild(newElement)
+}
+}
+
+
+// Change selected entry
+function selectEntry(id, keyboardNavigation) {
+document.getElementById(entry.selected).style.cursor = "default"
+document.getElementById(entry.selected).style.backgroundColor = "rgba(0, 0, 0, 0)"
+entry.selected = id
+document.getElementById(entry.selected).style.cursor = "default"
+document.getElementById(entry.selected).style.backgroundColor = "rgba(255, 255, 255, 0.09)"
+
+
+// This is used for keyboard navigation
+entry.selectedInt = parseInt(entry.selected.slice(1))
+
+if (keyboardNavigation) {
+if (entry.selectedInt > 1) {
+document.getElementById(entry.selected).scrollIntoView({block: "center", behavior: "smooth"})
+} else {
+document.getElementById("entryContainer").scrollTo({top: 0, behavior: "smooth"})
+}
+}
+
+updateButtons()
+}
+
+
+
+// Update buttons label and links
+function updateButtons() {
+// Change button links
+document.getElementById("download1").setAttribute("href", elementsData[tab.selected][entry.selected].l1)
+document.getElementById("download1").innerHTML = elementsData[tab.selected][entry.selected].b1
+
+// Checks if the first button has specified text in the JSON, and if not, sets a generic "Descargar" label
+if (elementsData[tab.selected][entry.selected].b1 === undefined) {
+document.getElementById("download1").innerHTML = "Descargar"
+} else {
+document.getElementById("download1").innerHTML = elementsData[tab.selected][entry.selected].b1
+}
+
+// Checks if there is extra information from information.json, and if so, it enables the information button
+if (informationData[tab.selected] === undefined) {
+document.getElementById("info").style.opacity = "0"
+fullButtonWidth = "408px"
+splitButtonWidth = "196px"
+document.getElementById("download2").style.left = "0px"
+} else if (informationData[tab.selected][entry.selected] === undefined) {
+document.getElementById("info").style.opacity = "0"
+fullButtonWidth = "408px"
+splitButtonWidth = "196px"
+document.getElementById("download2").style.left = "0px"
+} else {
+document.getElementById("info").style.opacity = null
+fullButtonWidth = "356px"
+splitButtonWidth = "170px"
+document.getElementById("download2").style.left = "52px"
+}
+
+// Checks if there is a second link, and if so, it enables the second button
+if (elementsData[tab.selected][entry.selected].l2 === undefined) {
+document.getElementById("download1").style.width = fullButtonWidth
+document.getElementById("download2").removeAttribute("href")
+document.getElementById("download2").style.opacity = "0"
+} else {
+document.getElementById("download2").style.display = null
+document.getElementById("download1").style.width = splitButtonWidth
+document.getElementById("download2").style.width = splitButtonWidth
+document.getElementById("download2").setAttribute("href", elementsData[tab.selected][entry.selected].l2)
+document.getElementById("download2").innerHTML = elementsData[tab.selected][entry.selected].b2
+document.getElementById("download2").style.opacity = null
+}
+}
+
+
+// Open Information/Help menu
+function infoMenu() {
+if (infoMenuOpen) {
+infoMenuOpen = false
+document.getElementById("entryContainer").style.display = null
+document.getElementById("textContainer").style.display = null
+document.getElementById("info").style.backgroundImage = null
+document.getElementById("listIcon").src = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9IkZyYW1lIj4KPHBhdGggaWQ9IlZlY3RvciIgZD0iTTggNkgyMSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNOCAxMkgyMSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl8zIiBkPSJNOCAxOEgyMSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl80IiBkPSJNMyA2SDMuMDEiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGlkPSJWZWN0b3JfNSIgZD0iTTMgMTJIMy4wMSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggaWQ9IlZlY3Rvcl82IiBkPSJNMyAxOEgzLjAxIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L2c+Cjwvc3ZnPgo="
+document.getElementById("tabSubtitle").innerHTML = elementsData[tab.selected].subtitle
+} else {
+infoMenuOpen = true
+document.getElementById("entryContainer").style.display = "none"
+document.getElementById("textContainer").style.display = "block"
+document.getElementById("listIcon").src = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10ZXh0Ij48cGF0aCBkPSJNMTcgNi4xSDMiLz48cGF0aCBkPSJNMjEgMTIuMUgzIi8+PHBhdGggZD0iTTE1LjEgMThIMyIvPjwvc3ZnPg=="
+document.getElementById("info").style.backgroundImage = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOCIgaGVpZ2h0PSIyOCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jaGV2cm9uLWxlZnQiPjxwYXRoIGQ9Im0xNSAxOC02LTYgNi02Ii8+PC9zdmc++"
+document.getElementById("tabSubtitle").innerHTML = "Información: " + elementsData[tab.selected][entry.selected].name
+document.getElementById("textContainer").innerHTML = informationData[tab.selected][entry.selected]
+}
+}
+
+
+
+// Enable/disable compact mode
+function compactMode() {
+if (window.innerHeight < 721 || window.innerWidth - 580 < tab.amount * 140) {
+document.getElementById("header").style.borderBottom = "none"
+document.getElementById("header").style.borderRight = "2px solid rgba(0, 0, 0, 0.25)"
+document.getElementById("header").style.width = "296px"
+document.getElementById("header").style.height = "100%"
+document.getElementById("tabContainer").style.display = "block"
+document.getElementById("tabContainer").style.left = "59px"
+document.getElementById("tabContainer").style.transform = "none"
+document.getElementById("tabContainer").style.marginTop = "96px"
+document.getElementById("mainContainer").style.left = "calc(50% + 149px)"
+document.getElementById("socialContainer").style.right = "auto"
+document.getElementById("socialContainer").style.top = "auto"
+document.getElementById("socialContainer").style.bottom = "20px"
+document.getElementById("socialContainer").style.left = "64px"
+
+// This changes a CSS variable which is used for the tab buttons
+document.documentElement.style.setProperty("--tabWidth", "180px")
+} else {
+document.getElementById("header").style = null
+document.getElementById("tabContainer").style = null
+document.getElementById("tabContainer").style.width = tab.amount * 140 + "px"
+document.getElementById("mainContainer").style.left = null
+document.getElementById("socialContainer").style = null
+document.documentElement.style.setProperty("--tabWidth", "180px")
+}
+
+if (window.innerHeight < 575) {
+document.getElementById("mainContainer").style.height = window.innerHeight + "px"
+document.getElementById("serverInfo").style.height = window.innerHeight - 450 + "px"
+document.getElementById("mainBox").style.height = window.innerHeight - 124 + "px"
+document.getElementById("listBox").style.height = window.innerHeight - 194 + "px"
+} else {
+document.getElementById("mainContainer").style.height = null
+document.getElementById("mainBox").style.height = null
+document.getElementById("listBox").style.height = null
+}
+}
+
+// FALTA AÑADIR EN MAINCHAT CROTER!!! (proximamente)
+compactMode()
+}
+</script>
 </body>
 </html>
