@@ -1,7 +1,7 @@
 {
 "t2": {
-"title": "Celulares",
-"subtitle": "Proyectos Android",
+"title": "Datas SAMP",
+"subtitle": "Datas Android Para SAMP",
 "e1": {
 "name": "OptiCraft PE 1.9",
 "l1": "https://www.mediafire.com/file/wmj066ndz4xrqw1"
@@ -28,8 +28,8 @@
 }
 },    
 "t1": {
-"title": "Emuladores",
-"subtitle": "Emuladores optimizados",
+"title": "Aportes SAMP",
+"subtitle": "Aportes PC para SAMP",
 "e1": {
 "name": "Citra",
 "l1": "https://www.mediafire.com/file/u03w1u1rxgya2jt"
@@ -394,8 +394,8 @@
 }
 },
 "t4": {
-"title": "OptiCraft",
-"subtitle": "Versiones",
+"title": "Apks SAMP",
+"subtitle": "Aplicaciones Alyn",
 "e1": {
 "name": "OptiCraft 1.5",
 "l1": "https://www.mediafire.com/file/k11ii3cgsf3st8p"
